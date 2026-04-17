@@ -24,7 +24,6 @@
     .topbar{
       width:100%;
       background:transparent;
-      position:fixed;
       top:0;
       left:0;
       z-index:50;
@@ -385,7 +384,13 @@
       text-decoration: none;
     }
 
-    .about h3{font-family:"Playfair Display";margin-top:0;color:var(--accent);font-size:28px}
+    .about h3{
+              text-align: center;
+              font-family:"Playfair Display";
+              margin-top:0;
+              color: black;
+              font-size: 58px;
+            }
     .about p{color:#000000}
 
     /* Grid "Nos pôles" */
@@ -398,14 +403,85 @@
     .section-title{
       text-align:center;
       font-family:"Playfair Display";
-      font-size:42px;
+      font-size: 80.2159px;
       color:var(--accent);
       margin:18px 0 28px;
     }
     .grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
-      gap:18px;
+      gap: 18px;
+      height: 720px;
+      width: 920px;
+      margin-left: 120px;
+    }
+
+    .name{
+      font-weight: normal;
+      color: white;
+    }
+
+    #cacao:hover{
+      background-image: url(../img/cacao_img.png);
+       background-size: 100% 100%; /* augmente la taille à 150% */  
+       background-repeat: no-repeat;  
+       background-position: center;
+    }
+
+    #boutique:hover{
+      background-image: url(../img/sweet.png);
+      background-size: 100% 100%; /* augmente la taille à 150% */  
+      background-repeat: no-repeat;  
+      background-position: center;
+    }
+
+    #spiritualité:hover{
+      background-image: url(../img/boisson.png);
+      background-size: 100% 100%; /* augmente la taille à 150% */  
+      background-repeat: no-repeat;  
+      background-position: center;
+    }
+
+    #parfums:hover{
+      background-image: url(../img/parfums.jpg);
+      background-size: 100% 100%; /* augmente la taille à 150% */  
+      background-repeat: no-repeat;  
+      background-position: center;
+    }
+
+    #divers:hover{
+      background-image: url(../img/png.png);
+      background-size: 100% 100%; /* augmente la taille à 150% */  
+       background-repeat: no-repeat;  
+       background-position: center;
+    }
+
+    #pret-a-porter:hover{
+      background-image: url(../img/tenu.png);
+      background-size: 100% 100%; /* augmente la taille à 150% */  
+      background-repeat: no-repeat;  
+      background-position: center;
+    }
+
+    #sante:hover{
+      background-image: url(../img/soin.png);
+      background-size: 100% 100%; /* augmente la taille à 150% */  
+      background-repeat: no-repeat;  
+      background-position: center;
+    }
+
+    #music:hover{
+      background-image: url(../img/song.png);
+      background-size: 100% 100%; /* augmente la taille à 150% */  
+      background-repeat: no-repeat;  
+      background-position: center;
+    }
+
+    #hébergements:hover{
+      background-image: url(../img/hotel.png);
+      background-size: 100% 100%; /* augmente la taille à 150% */  
+      background-repeat: no-repeat;  
+      background-position: center;
     }
 
     .mini-video {
@@ -419,7 +495,6 @@
     .pole{
       background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.15));
       border:2px solid rgba(151, 88, 17, 0.918);
-      min-height:220px;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -429,6 +504,7 @@
       position:relative;
       overflow:hidden;
     }
+
     .pole .name{z-index:2}
     .pole::after{
       content:'';
@@ -437,6 +513,7 @@
       background:linear-gradient(120deg, rgba(0,0,0,0.15), rgba(0,0,0,0.6));
       z-index:1;
     }
+
 
     /* Fog / background image section */
     .visual{
@@ -470,10 +547,10 @@
     /* === CONTACT SECTION (fusionné) === */
     .contact{
       background:transparent;
-      padding:0 20px 60px;
       margin-top:-80px;
       position:relative;
       z-index:3;
+      margin-top: 2500px;
     }
 
     /* white card overlapping visual, similar to screenshots */
@@ -482,7 +559,6 @@
       margin: -40px auto 24px;
       background:var(--contact-white);
       padding:48px 48px 24px;
-      border-radius:6px;
       box-shadow:0 6px 30px var(--contact-shadow);
       text-align:center;
       color:#111;
@@ -493,9 +569,13 @@
       background:#0b0b0b;
       color:#fff;
       padding:10px 18px;
-      font-weight:700;
+      font-weight: bold;
       margin-bottom:18px;
       font-family:"Playfair Display", serif;
+      font-size: 30px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      height: 110px;
+      width: 170px;
     }
 
     .contact-wrap h2{
@@ -507,20 +587,15 @@
     }
 
     .contact-meta{
-      color:var(--muted);
+      color: black;
       font-size:14px;
       line-height:1.5;
-      margin-bottom:20px;
+      margin-bottom: 70px;
     }
 
-    .two-col{
-      display:flex;
-      gap:24px;
-      align-items:flex-start;
-      margin:20px 0 28px;
-    }
 
     .left-col{
+      margin-left: 790px;;
       flex:1;
       text-align:left;
       font-size:15px;
@@ -528,11 +603,14 @@
     }
 
     .right-col{
+      display: flex;
       flex:1;
+      justify-content: center;
+      margin-bottom: 100px;
     }
 
     /* Form like screenshots: name/email/phone stacked left, large message box right */
-    form.contact-form{
+    form.contact-form{  
       display:grid;
       grid-template-columns:1fr 1fr;
       gap:12px;
@@ -573,24 +651,31 @@
       padding:8px 14px;
       border:none;
       cursor:pointer;
-      font-weight:700;
-      border-radius:4px;
+      font: weight 300;
+      height: 40px;
+      width: 150px;
     }
 
     .map-wrap{
-      border-top:2px solid #000;
-      padding-top:18px;
-      margin-top:18px;
+      width: 948px;
+      border-top: 10px solid #000;
+      padding-top: 9px;
+      margin-top: 8px;
+      margin-left: 440px;
     }
 
     .map{
       width:100%;
-      height:260px;
+      height: 322px;
       border:2px solid #111;
       background:#eaeaea;
     }
 
     /* Footer dark motif (preserve existing footer style but darker bar) */
+    footer {
+      display: flex;
+    }
+
     footer.site-footer{
       margin-top:40px;
       background:linear-gradient(45deg, rgba(0,0,0,0.95), rgba(18,18,18,0.98));
@@ -600,6 +685,7 @@
       overflow:hidden;
     }
     footer .inner{
+      flex-direction: column;
       max-width:var(--container);
       margin:0 auto;
       display:flex;
@@ -608,8 +694,8 @@
       align-items:center;
       flex-wrap:wrap;
     }
-    .footer-left{font-size:13px; color:#bbb}
-    .footer-right{font-size:13px; color:#bbb; text-align:right}
+    .footer-bottom{font-size:13px; color:#8e8a8a}
+    .footer-top{font-size:13px; color:#787575;}
 
     /* floating purple chat button (adapted to visual) */
     .chat-btn{
