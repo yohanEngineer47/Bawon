@@ -98,23 +98,24 @@
         </div>
       </div>
     </section>
-
-    <section>
-      <div class="mini-video">
-       <!--- bande colorée floue à gauche -->
-       <div class="left-band" aria-hidden="true"></div>
-        <div style="margin-top: 100px; margin-left: 350px; font-size: 35px;">
-          <p>Éveillez vos sens</p> 
-          <p>Connectez vous</p>
-          <p> Explorez les mystères</p>
-          <button class="abonnez-vous">Abonnez-vous</button>
-        </div>
-        <div>
-          <video controls style="margin-left: 200px; margin-top: 150px; height: 300px; width: 500px;">
-            <source src="../20250926.mp4" type="mp4">
-          </video>
-        </div>
+    <section class="bandecolor">
+    </section>
+    <section class="blockvideo">
+      <!--- bande colorée floue à gauche -->
+     <div class="left-band"></div>
+      <div class="content">
+        <p>Éveillez vos sens</p> 
+        <p>Connectez vous</p>
+        <p> Explorez les mystères</p>
+        <button class="abonnez-vous">Abonnez-vous</button>
       </div>
+
+      <div class="video-box">
+        <video controls autoplay muted loop playsinline width="600">
+          <source src="../Bawon/video/pub.mp4" type="video/mp4">
+        </video>
+      </div>
+      
     </section>
 
     <section class="poles" aria-label="Nos pôles">
@@ -145,7 +146,7 @@
 
         <div class="contact-meta">
           <div style="font-weight:600; margin-bottom:8px; color: black; font-size: 25px;">ADRESSE</div>
-          15, rue de l'Exemple 75001 Paris, France<br>
+          15, rue du Château 75001 Paris, France<br>
           Tel: 01 23 45 67 89 • Fax: 01 23 45 67 99
         </div>
 

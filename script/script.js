@@ -93,7 +93,7 @@ menu.addEventListener('click', (e) => {
       iframe.style.border='0';
       iframe.loading='lazy';
       iframe.referrerPolicy='no-referrer-when-downgrade';
-      iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9999999999995!2d2.292292915674412!3d48.85837307928716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fef00000001%3A0x0!2zNDjCsDUxJzQ1LjAiTiAywrAxNyc0OC4wIlc!5e0!3m2!1sfr!2sfr!4v1610000000000!5m2!1sfr!2sfr";
+      iframe.src ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10500.039307966183!2d2.352222!3d48.858023!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671fdb38f5b8b%3A0xc0345272f10c1f6e!2sH%C3%B4tel%20de%20Ville!5e0!3m2!1sfr!2sfr!4v1777113142278!5m2!1sfr!2sfr";
       map.innerHTML='';
       map.appendChild(iframe);
     })();
