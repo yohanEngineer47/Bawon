@@ -1,5 +1,10 @@
- :root{
-      --bg:#0b0b0b;
+   :root{
+      --hero-img: url('../img/img_back.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      /*--bg:#0b0b0b;*/
       --accent:#d9b790;
       --muted:#bdbdbd;
       --glass: rgba(255,255,255,0.06);
@@ -8,29 +13,46 @@
       --contact-shadow: rgba(0,0,0,0.12);
       --form-border: #111;
     }
+
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
       margin:0;
       font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background:var(--bg);
-      color:#fff;
+      background: #000;
+      background-repeat: no-repeat;
+      background-position: center;
+      /*color:#fff;*/
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
       line-height:1.3;
     }
 
+    /* Empêche les débordements */
+      img, video {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Conteneur global fluide */
+      main {
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+
     /* Header */
     .topbar{
+      position: fixed;
       width:100%;
-      background:transparent;
       top:0;
       left:0;
-      z-index:50;
+      z-index: 100;
       display:flex;
       justify-content:center;
-      pointer-events:none;
+      transition: all 0.6s ease;
     }
+
     .topbar-inner{
       width:100%;
       max-width:var(--container);
@@ -39,9 +61,17 @@
       justify-content:space-between;
       padding:14px 20px;
       pointer-events:auto;
-      background-color: #000;
-      opacity: 0.9;
+      background: transparent;
+      transition: all 0.6s ease;
+
     }
+
+    .topbar.scrolled .topbar-inner{
+       background: rgba(0,0,0,0.85); /* apparaît au scroll */
+       backdrop-filter: blur(10px); /* effet glass */
+
+    }
+
     .logo{
       display: flex;
       gap: 10px;
@@ -93,6 +123,9 @@
 
     /* Hero */
     .hero{
+      z-index: 0;
+      margin-top: 0;
+      padding-top: 100px;
       min-height:72vh;
       display:flex;
       align-items:center;
@@ -103,14 +136,48 @@
       padding-right: 20px;
       margin-bottom: 0px;
       padding-bottom: 0px;
-      padding-top: 0px;
     }
+
+    .hero.scrolled .hero-bg{
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .hero.scrolled::before{
+      opacity: 0;
+    }
+
+    .hero::before{
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: black;
+      z-index:1;
+      transition: opacity 1.2s ease;
+    }
+
+    .hero.scrolled .hero-bg{
+      opacity: 1; /* image apparaît */
+      transform: scale(1); /* zoom normal */
+    }
+
+    .hero.scrolled::before{
+      opacity: 0; /* le noir disparaît */
+    }
+
     .hero-bg{
+      background-image: var(--hero-img);
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.1);
+      opacity: 0;
+      transition: all 1.2s ease;
       position:absolute;
       inset:0;
-      background-image: linear-gradient(160deg, rgba(0,0,0,0.72), rgba(0,0,0,0.88));
       z-index:0;
     }
+
+    .hero-bg:is
 
     /* Bande colorée floue à gauche (superposée sous le contenu) */
     .left-band{
@@ -140,18 +207,18 @@
       align-items:center;
     }
 
-    /* léger vignettage (optionnel) pour assombrir les bords */
+  /* léger vignettage (optionnel) pour assombrir les bords */
   .hero::after{
     content:"";
     position:absolute;
     inset:0;
     z-index:3;
     pointer-events:none;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.7) 100%);
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.7) 100%),;
     mix-blend-mode:multiply;
   }
 
-    /* si tu veux accentuer les taches lumineuses, ajoutees ci-dessous */
+  /* si tu veux accentuer les taches lumineuses, ajoutees ci-dessous */
   .left-band::before,
   .left-band::after{
     content:"";
@@ -180,10 +247,11 @@
 
 
     .lang-switch{
-      position:relative;
+      position:absolute;
       display:inline-block;
       font-family:inherit;
       margin-top: 40px;
+
     }
 
     /* bouton carré */
@@ -201,7 +269,6 @@
       padding-bottom: 30px;
       padding-left: 90px;
       padding-right: 80px;
-      margin-left: 900px;
     }
 
     /* menu déroulant */
@@ -279,7 +346,10 @@
                   }
 
 
-    .hero { display:flex; align-items:center; gap: 0px; }
+    .hero { display:flex;
+            align-items:center;
+            gap: 0px;
+          }
 
     .img-stack{
       position:relative;
@@ -315,7 +385,14 @@
       font-style: italic;
       letter-spacing: 2px;
     }
-    .hero-buttons{display:flex;gap:70px;}
+
+    .hero-buttons{
+      display:flex;
+      gap:20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .btn{
       padding:12px 18px;
       border-radius:8px;
@@ -356,7 +433,9 @@
 
     /* About */
     .about{
-      height: 463px;
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: center;
       margin: 0px;
       display:flex;
       align-items:flex-start;
@@ -370,7 +449,6 @@
     }
 
     .about-card{
-      height: 450px;
       width: 100%;
       background: beige;
       padding:24px;
@@ -404,13 +482,15 @@
       color:var(--accent);
       margin:18px 0 28px;
     }
+
     .grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap: 18px;
       height: 720px;
-      width: 920px;
-      margin-left: 120px;
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
     }
 
     .name{ 
@@ -494,11 +574,14 @@
       align-items: center;
       background: #000;
       padding: 100px 10%;
-      height: 450px;
+      height: auto;
 
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: white;
       overflow: hidden;
+
+      flex-wrap: wrap;
+      gap: 40px;
     }
 
     /* TEXTE */
@@ -604,15 +687,15 @@
       margin-top:-80px;
       position:relative;
       z-index:3;
-      margin-top: 2500px;
+      margin-top: 500px;
     }
 
     /* white card overlapping visual, similar to screenshots */
     .contact-wrap{
-      max-width: 100%;
-      margin: -40px auto 24px;
+      max-width: 1200px;
+      margin: 0 auto;
       background:var(--contact-white);
-      padding:48px 48px 24px;
+      padding: 40px 20px;
       box-shadow:0 6px 30px var(--contact-shadow);
       text-align:center;
       color:#111;
@@ -648,8 +731,7 @@
     }
 
 
-    .left-col{
-      margin-left: 790px;;
+    /*.left-col{
       flex:1;
       text-align:left;
       font-size:15px;
@@ -661,14 +743,29 @@
       flex:1;
       justify-content: center;
       margin-bottom: 100px;
+    }*/
+
+    .left-col,
+    .right-col{
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .contact-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap; /* IMPORTANT pour mobile */
     }
 
     /* Form like screenshots: name/email/phone stacked left, large message box right */
     form.contact-form{  
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-      align-items:start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        width: 100%;
     }
 
     .contact-form input[type="text"],
@@ -681,6 +778,7 @@
       outline:none;
       font-size:14px;
       resize:vertical;
+      grid-column: span 2; /* prend toute la largeur */
     }
 
     .contact-form textarea{
@@ -715,7 +813,7 @@
       border-top: 10px solid #000;
       padding-top: 9px;
       margin-top: 8px;
-      margin-left: 440px;
+      margin-left: auto;
     }
 
     .map{
@@ -771,7 +869,14 @@
       border:none;
     }
 
-    /* Responsive */
+
+
+    /**** ===========================================================****/
+    /****                          RESPONSIVE                        ****/
+    /**** ICI POUR GÉRER LES MESURE SUR LES ÉCRANS MOBILE ET TABLETTE ****/
+    /****                                                             ****/
+    /**** =========================================================== ****/
+
     @media (max-width: 1000px){
       .hero-inner{grid-template-columns:1fr}
       .grid{grid-template-columns:repeat(2,1fr)}
@@ -840,3 +945,103 @@
     opacity: 0.6;
   }
     }
+
+  @media (max-width: 900px){
+  .hero-bg{ transform: scale(1.02); background-position: center top; }
+  .hero-bg.is-visible{ transform: scale(1.01); }
+  }
+
+  @media (max-width: 480px){
+  .hero-bg{ background-position: center 30%; }
+  }
+
+  /* responsive aux autres écrans */
+  /* TABLETTE */
+@media (max-width: 1024px){
+
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .about{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons{
+    gap: 15px;
+  }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px){
+
+  .brand-title{
+    font-size: 40px;
+  }
+
+  .section-title{
+    font-size: 40px;
+  }
+
+  .tagline{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero-buttons{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn{
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .blockvideo{
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .content p{
+    font-size: 24px;
+  }
+
+  .contact-wrap{
+    padding: 20px;
+  }
+
+  form.contact-form{
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form textarea{
+    grid-column: span 1;
+  }
+
+}
+
+
+/* PETITS MOBILES */
+@media (max-width: 480px){
+
+  .brand-title{
+    font-size: 30px;
+  }
+
+  .section-title{
+    font-size: 28px;
+  }
+
+  .tagline{
+    font-size: 16px;
+  }
+
+}

@@ -97,3 +97,38 @@ menu.addEventListener('click', (e) => {
       map.innerHTML='';
       map.appendChild(iframe);
     })();
+
+  // animation scroll BAWON
+   const hero = document.querySelector('.hero');
+    const header = document.querySelector('.topbar');
+
+    window.addEventListener('scroll', () => {
+
+      const heroHeight = hero.offsetHeight;
+      const scrollY = window.scrollY;
+
+      // quand tu dépasses le hero
+      if(scrollY > heroHeight * 0.4){
+        hero.classList.add('scrolled'); // pour l'effet hero
+        header.classList.add('scrolled'); // pour l'effet header
+      } else {
+        hero.classList.remove('scrolled');
+        header.classList.remove('scrolled');
+      }
+
+});
+
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.4
+  });
+
+  if(bawonSection){
+    observer.observe(bawonSection);
+  }

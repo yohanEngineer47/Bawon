@@ -32,7 +32,6 @@
       </nav>
     </div>
   </div>
-
   <main>
     <section class="hero" aria-label="Hero">
       <div class="hero-bg" aria-hidden="true"></div>
@@ -65,9 +64,6 @@
           <img src="img/down-arrow.png" style="height: 70px" />
         </div>
       </div>
-    </section>
-    <section>
-      <div class="bap"></div>
     </section>
     <section class="about" aria-label="À propos">
       <div style="flex-basis:360px; display:flex;align-items:center;justify-content:center">
@@ -133,11 +129,6 @@
       </div>
     </section>
 
-    <section class="visual" aria-hidden="false">
-      <div class="bgimg" role="img" aria-label="Image décorative"></div>
-      <div class="fog" aria-hidden="true"></div>
-    </section>
-
     <!-- == Nouvelle section CONTACT (intégrée et stylisée) == -->
     <section class="contact" aria-label="Nous contacter">
       <div class="contact-wrap">
@@ -150,32 +141,32 @@
           Tel: 01 23 45 67 89 • Fax: 01 23 45 67 99
         </div>
 
-        
-        <div class="left-col">
-          <div style="font-weight:700; font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;" class="section-title;">HORAIRES D'OUVERTURE</div>
-          <div style="display: flex; color: black; line-height:1.6; margin-bottom: 70px; justify-content: centert;">
-            Lundi - vendredi : 09:00 - 22:00<br>
-            Samedi : 09:30 - 22:00<br>
-            Dimanche : 09:30 - 21:00
+        <div class="contact-content">
+          <div class="left-col">
+            <div style="font-weight:700; font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;" class="section-title;">HORAIRES D'OUVERTURE</div>
+            <div style="display: flex; color: black; line-height:1.6; margin-bottom: 70px; justify-content: centert;">
+              Lundi - vendredi : 09:00 - 22:00<br>
+              Samedi : 09:30 - 22:00<br>
+              Dimanche : 09:30 - 21:00
+            </div>
+          </div>
+
+          <div class="right-col">
+            <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+             <div style="display: flex ; flex-direction: column ; gap: 8px;">
+              <input class="wide" type="text" id="name" name="name" placeholder="Nom" required>
+              <input class="wide" type="text" id="name" name="name" placeholder="Prénom" required>
+              <input type="email" id="email" name="email" placeholder="E-mail" required>
+             </div>
+             <div>
+              <textarea name="message" id="message" placeholder="Rédigez votre message ici..." required></textarea>
+             </div>
+              <div class="submit-wrap">
+                <button class="btn-send" type="submit">Envoyer</button>
+              </div>
+            </form>
           </div>
         </div>
-
-        <div class="right-col">
-          <form class="contact-form" id="contactForm" onsubmit="submitForm(event)" style="width: 1000px;">
-           <div style="display: flex ; flex-direction: column ; gap: 8px;">
-            <input class="wide" type="text" id="name" name="name" placeholder="Nom" required>
-            <input class="wide" type="text" id="name" name="name" placeholder="Prénom" required>
-            <input type="email" id="email" name="email" placeholder="E-mail" required>
-           </div>
-           <div>
-            <textarea name="message" id="message" placeholder="Rédigez votre message ici..." required></textarea>
-           </div>
-            <div class="submit-wrap">
-              <button class="btn-send" type="submit">Envoyer</button>
-            </div>
-          </form>
-        </div>
-
         <div class="map-wrap">
           <div style="width: 940px; height: 322px; margin:12px auto; margin-top: 0px; margin-bottom: 200px;">
             <div class="map" id="map">Carte (chargement...)</div>
