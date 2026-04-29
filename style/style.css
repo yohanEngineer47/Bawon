@@ -693,8 +693,8 @@
 
     /* white card overlapping visual, similar to screenshots */
     .contact-wrap{
-      max-width: 1200px;
-      margin: 0 auto;
+      width: 100%;
+      margin: 0;
       background:var(--contact-white);
       padding: 40px 20px;
       box-shadow:0 6px 30px var(--contact-shadow);
@@ -749,14 +749,17 @@
     .left-col,
     .right-col{
       width: 100%;
-      max-width: 500px;
+      max-width: 700px;
     }
 
     .contact-content{
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       gap: 40px;
       flex-wrap: wrap; /* IMPORTANT pour mobile */
     }
@@ -810,11 +813,12 @@
     }
 
     .map-wrap{
-      width: 340px;
+      width: 1150px;
       border-top: 10px solid #000;
       padding-top: 9px;
-      margin-top: 8px;
+      margin-top: 10%;
       margin-left: auto;
+      margin-right: auto;
     }
 
     .map{
@@ -1026,6 +1030,12 @@
 
   .contact-wrap{
     padding: 20px;
+    margin: 0px;
+
+  }
+
+  .map-wrap{
+    width: 100%;
   }
 
   form.contact-form{
@@ -1038,6 +1048,11 @@
 
   .nav > .nav2{
     font-size: 11px;
+  }
+
+  .inner{
+   width: 100%;
+
   }
 
 }
