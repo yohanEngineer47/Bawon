@@ -876,13 +876,16 @@
 
 
 
-    /**** ===========================================================****/
-    /****                          RESPONSIVE                        ****/
-    /**** ICI POUR GÉRER LES MESURE SUR LES ÉCRANS MOBILE ET TABLETTE ****/
-    /****                                                             ****/
+    /**** =========================================================== ****/
+    /****                          RESPONSIVE                         ****/
+    /****   ICI POUR GÉRER LES STYLES DE LA PAGE WEB SUR LES ÉCRANS   ****/
+    /****                       MOBILE ET TABLETTE                    ****/
     /**** =========================================================== ****/
 
-    @media (max-width: 1000px){
+
+  /* LES TABLETTES */
+
+   @media (max-width: 1000px){
       .hero-inner{grid-template-columns:1fr}
       .grid{grid-template-columns:repeat(2,1fr)}
       .contact-wrap{margin: -30px 20px 18px;padding:28px 20px}
@@ -893,75 +896,16 @@
       .contact-form .submit-wrap{grid-column:1 / -1; justify-content:flex-end}
       .map{height:220px}
     }
-    @media (max-width:600px){
-      .brand-title{font-size:40px}
-      .grid{grid-template-columns:1fr}
-    }
-    @media (max-width:900px){
-      .left-band{  left: -10%;
-                   width: 60%;
-                   top: 40vh;           /* positionne la bande environ au milieu-bas de l'écran */
-                   height: 120%;
-                   filter: blur(20px);
-                   transform: rotate(-6deg) scale(1.02);
-                 }
 
-      .hero{ padding-left:12px; padding-right:12px; }
-    }
-
-    @media (max-width: 768px) {
-    .mini-video {flex-direction: row !important;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 60px 20px;
-    height: auto;
-  }
-
-  /* TEXTE */
-  .content p {
-    font-size: 24px;
-  }
-
-  /* BOUTON */
-  .abonnez-vous {
-    font-size: 12px;
-    padding: 10px 20px;
-  }
-
-  /* VIDEO */
-  .video-box {
-    margin-top: 30px;
-  }
-
-  .video-box video {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-  }
-
-  /* BANDE FLOUE */
-  .left-band {
-    width: 80%;
-    height: 50%;
-    left: -30%;
-    top: 10%;
-    filter: blur(80px);
-    opacity: 0.6;
-  }
-    }
-
-  @media (max-width: 900px){
+@media (max-width: 900px){
   .hero-bg{ transform: scale(1.02); background-position: center top; }
   .hero-bg.is-visible{ transform: scale(1.01); }
-  }
+}
 
   @media (max-width: 480px){
   .hero-bg{ background-position: center 30%; }
   }
 
-  /* responsive aux autres écrans */
-  /* TABLETTE */
 @media (max-width: 1024px){
 
   .grid{
@@ -980,8 +924,59 @@
 }
 
 
-/* MOBILE */
+/* LES ÉCRANS MOBILE */
 @media (max-width: 768px){
+
+
+ .spe-text{
+    width: 700px;
+    margin-left: -170px;
+    height: 260px;
+ }
+
+  .about h3{font-size: 28px;}
+
+  .mini-video {flex-direction: row !important;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      height: auto;
+    }
+
+    /* TEXTE */
+
+    .content {margin-left: -150px;}
+    .content p {
+      font-size: 24px;
+    }
+
+    /* BOUTON */
+    .abonnez-vous {
+      font-size: 10px;
+      padding: 10px 20px;
+    }
+
+    /* VIDEO */
+    .video-box {
+      margin-top: 30px;
+    }
+
+    .video-box video {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+    }
+
+    /* BANDE FLOUE */
+    .left-band {
+      width: 80%;
+      height: 50%;
+      left: -30%;
+      top: 10%;
+      filter: blur(80px);
+      opacity: 0.6;
+    }
 
   .about{
     flex-direction: row !important;
@@ -1025,7 +1020,7 @@
   }
 
   .content p{
-    font-size: 24px;
+    font-size: 15px;
   }
 
   .contact-wrap{
@@ -1055,14 +1050,62 @@
 
   }
 
+  .footer-glo{
+    margin-right: 400px;
+    gap: 10px;
+
+  }
+
+  .footer-top{
+    font-size: 9px;
+  }
+
+  #spe-footer-top{
+    margin-right: -80px;
+  }
+
+
+  #spe-footer-top-2{
+    width: 100px;
+    margin-right: -50px;
+    font-size: 7px;
+  }
+
+  #spe-footer-top-3{
+    margin-right: -70px;
+  }
+
+
+  .footer-bottom{
+    margin-right: 300px;
+    width: 500px;
+  }
+
 }
 
+  @media (max-width:600px){
+    .brand-title{font-size:40px}
+    .grid{grid-template-columns:1fr}
+  }
 
-/* PETITS MOBILES */
+  @media (max-width:900px){
+    .left-band{  left: -10%;
+                 width: 60%;
+                 top: 40vh;           /* positionne la bande environ au milieu-bas de l'écran */
+                 height: 120%;
+                 filter: blur(20px);
+                 transform: rotate(-6deg) scale(1.02);
+               }
+
+    .hero{ padding-left:12px; padding-right:12px; }
+}
+
+/* LES PETITS MOBILES */
 @media (max-width: 480px){
 
   .brand-title{
-    font-size: 30px;
+    font-size: 50px;
+    padding-top: 30px;
   }
 
   .section-title{
