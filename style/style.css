@@ -932,6 +932,7 @@
     width: 700px;
     margin-left: -170px;
     height: 260px;
+    text-align: center;
  }
 
   .about h3{font-size: 28px;}
@@ -1046,13 +1047,12 @@
   }
 
   .inner{
-   width: 100%;
-
+    width: 100%;
+    align-content: center;
   }
 
   .footer-glo{
-    margin-right: 400px;
-    gap: 10px;
+
 
   }
 
@@ -1061,7 +1061,7 @@
   }
 
   #spe-footer-top{
-    margin-right: -80px;
+    margin-right: -50px;
   }
 
 
@@ -1073,12 +1073,6 @@
 
   #spe-footer-top-3{
     margin-right: -70px;
-  }
-
-
-  .footer-bottom{
-    margin-right: 300px;
-    width: 500px;
   }
 
 }
@@ -1099,6 +1093,41 @@
 
     .hero{ padding-left:12px; padding-right:12px; }
 }
+
+
+/* SPÉCIALEMENT POUR LES ÉCRANS MOBILE EN VERTICALE UNIQUEMENT */
+@media (orientation: portrait) and (max-width: 768px) {
+  /* écran vertical */
+  .topbar-inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .nav{
+    display: grid;
+  }
+
+  .lien-logo{
+    margin-left: 45%;
+  }
+
+  .les-liens{
+    display: inline-flex;
+    gap: 10px;
+  }
+}
+
+/* POUR LES ÉCRANS MOBILES RETOURNER  */
+@media (orientation: landscape) and (max-width: 768px) {
+  .content {
+    margin-left: -80%;
+  }
+
+  .spe-text{
+    margin-left: 0%;
+  }
+}
+
 
 /* LES PETITS MOBILES */
 @media (max-width: 480px){
