@@ -129,6 +129,3 @@ menu.addEventListener('click', (e) => {
     threshold: 0.4
   });
 
-  if(bawonSection){
-    observer.observe(bawonSection);
-  }
