@@ -1,5 +1,0 @@
-- react Native for application 
-- Node.js (Express) for backend coding
-- SQL (ProtgreSQL) for dataabse
-- Hosting: Vercel and AWS
-- Auth: Firebase Authentification 
