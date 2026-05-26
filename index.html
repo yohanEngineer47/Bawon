@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
@@ -23,15 +23,21 @@
       </div>
       <nav class="nav" aria-label="Navigation principale">
         <div class="les-liens">
-          <a href="#" class="nav2">Services</a>
-          <a href="#" class="nav2">Contact</a>
-          <a href="#" class="nav2">Boutique</a>
-          <a href="#" class="nav2">À propos</a>
+          <a href="#section-title" class="nav2">Services</a>
+          <a href="include/contact.html" class="nav2">Contact</a>
+          <li class="dropdown">
+            <button class="nav2 dropdown-toggle">Investissement</button>
+            <ul class="der2" hidden>
+              <li><a href="include/fournisseur.html">Partenariat</a></li>
+              <li><a href="include/investisseur_vip.html">Investisseur_VIP</a></li>
+              <li><a href="include/investissement_rentabilite.html">Investissement</a></li>
+            </ul>
+          </li>
+          <a href="#hist" class="nav2">À propos</a>
           <a class="cta" href="#">Réserver</a>
         </div>
         <div class="lien-logo">
-           <a><img src="img/user.png" class="cta2" alt="login" title="pour se connecter" /></a>
-           <a><img src="img/achats.png" class="cta2" alt="panier" title="pour les achats" /></a>
+           <a href="include/login.html"><img src="img/user.png" class="cta2" alt="login" title="se connecter" /></a>
         </div>
       </nav>
     </div>
@@ -75,7 +81,7 @@
           <div><img class="img_bout" src="img/bout1.png" /></div>
         </div>
       </div>
-      <div class="about-card">
+      <div class="about-card" id="hist">
         <h3 style="font-family:peaches-and-cream-regular-w00,script;">À propos</h3>
         <p class="spe-text" style="font-family: Arial, Helvetica, sans-serif; padding-right: 170px; padding-left: 170px;">
          BAWON+ est né d’une ambition : révéler l’excellence haïtienne au monde. Inspiré par l’héritage culturel et spirituel d’Haïti, nous transformons traditions et savoir-faire en expériences modernes et luxueuses.
@@ -119,24 +125,18 @@
     </section>
 
     <section class="poles" aria-label="Nos pôles">
-      <h2 class="section-title">NOS PÔLES</h2>
+      <h2 class="section-title" id="section-title">NOS SERVICES</h2>
       <div class="grid" role="list">
-        <div class="pole" role="listitem" id="cacao"><div class="name">Cacao</div></div>
-        <div class="pole" role="listitem" id="boutique"><div class="name">Boutique</div></div>
-        <div class="pole" role="listitem" id="spiritualité"><div class="name">Spiritualité</div></div>
-        <div class="pole" role="listitem" id="parfums"><div class="name">Parfums</div></div>
-        <div class="pole" role="listitem" id="divers"><div class="name">Divers</div></div>
-        <div class="pole" role="listitem" id="pret-a-porter" ><div class="name">Prêt à porter</div></div>
-        <div class="pole" role="listitem" id="sante"><div class="name">Santé </div></div>
-        <div class="pole" role="listitem" id="music"><div class="name">Musique</div></div>
-        <div class="pole" role="listitem" id="hébergements"><div class="name">Hôtellerie</div></div>
+        <div class="pole" role="listitem" id="cacao"><div class="name"><a href="include/cacao.html" style="text-decoration: none; color:white;">Cacao</a></div></div>
+        <div class="pole" role="listitem" id="spiritualité"><div class="name"><a href="include/spiritualite.html" style="text-decoration: none; color:white;">Spiritualité</a></div></div>
+        <div class="pole" role="listitem" id="music"><div class="name"><a href="include/music.html" style="text-decoration: none; color:white;">Musique</a></div></div>
       </div>
     </section>
 
     <!-- == Nouvelle section CONTACT (intégrée et stylisée) == -->
     <section class="contact" aria-label="Nous contacter">
       <div class="contact-wrap">
-        <div class="brand-box" style="padding-top: 35px;">BAWON+</div>
+        <div class="brand-box" id="brand-box" style="padding-top: 35px;">BAWON+</div>
         <h2 style="font-size: 30px; letter-spacing: -1px; font-weight: 650;">NOUS CONTACTER</h2>
 
         <div class="contact-meta">
@@ -183,12 +183,12 @@
     <footer class="site-footer" role="contentinfo">
       <div class="inner">
         <div class="footer-glo" style="display: flex; justify-content: space-around; gap: 80px;">
-          <div class="footer-top" id="spe-footer-top"> MENTIONS LÉGALES</div>
-          <div class="footer-top" id="spe-footer-top-2">POLITIQUE EN MATIÈRE DE COOKIES</div>
-          <div class="footer-top" id="spe-footer-top-3">POLITIQUE DE CONFIDENTIALITÉ</div>
-          <div class="footer-top">CONDITION D'UTILISATION</div>
+          <div class="footer-top" id="spe-footer-top"> <a href="include/mentions-legales.html" style="text-decoration: none; color: #858585;">MENTIONS LÉGALES</a></div>
+          <div class="footer-top" id="spe-footer-top-2"><a href="include/cookies.html" style="text-decoration: none; color: #858585;">COOKIES</a></div>
+          <div class="footer-top" id="spe-footer-top-3"><a href="include/confidentialite.html" style="text-decoration: none; color: #858585;">CONFIDENTIALITÉ</a></div>
+          <div class="footer-top"><a href="include/conditions-utilisation.html" style="text-decoration: none; color: #858585">CONDITIONS</a></div>
         </div>
-        <div class="footer-bottom">© 2026 par LE TATOUEUR TATOUÉ. crééer localement</div>
+        <div class="footer-bottom">© 2026 par BAWON +. crééer localement</div>
       </div>
     </footer>
   </main>

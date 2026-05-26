@@ -1,3 +1,62 @@
+// for switch in type of investissement in menu
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+const dropdownMenu = document.querySelector(".der2");
+
+dropdownToggle.addEventListener("click", () => {
+  const expanded = dropdownToggle.getAttribute("aria-expanded") === "true";
+  dropdownMenu.hidden = expanded;
+  dropdownToggle.setAttribute(
+    "aria-expanded",
+    !expanded
+  );
+});
+
+document.addEventListener("click", (e) => {
+  if(!e.target.closest(".dropdown")){
+    dropdownMenu.hidden = true;
+    dropdownToggle.setAttribute("aria-expanded","false");
+  }
+});
+
+
+//next
+document
+  .querySelectorAll(".dropdown-toggle")
+  .forEach(toggle => {
+
+    toggle.addEventListener("click", () => {
+
+      const menu =
+        toggle.nextElementSibling;
+
+      const open = !menu.hidden;
+
+      document
+        .querySelectorAll(".der2")
+        .forEach(m => {
+          m.hidden = true;
+        });
+
+      menu.hidden = open;
+
+    });
+
+});
+
+document.addEventListener("click", (e) => {
+
+  if(!e.target.closest(".dropdown")){
+
+    document
+      .querySelectorAll(".der2")
+      .forEach(menu => {
+        menu.hidden = true;
+      });
+
+  }
+
+});
+
 // for switch laguages
 const toggle = document.querySelector('.lang-toggle');
 const menu = document.getElementById('lang-menu');

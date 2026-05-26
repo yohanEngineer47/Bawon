@@ -90,15 +90,83 @@
       gap:16px;
       align-items:center;
     }
+
+    .les-liens{
+      gap: 20px;
+      display: flex;
+    }
+
     .nav a{color:#94836c;text-decoration:none;font-size:14px;opacity:0.95}
   
-    .nav2{ font-weight: 700;}
+    .nav2{
+        font-weight: 700;
+        margin-top: 7px;
+        }
 
     .nav2:hover{
       color: white;
       transform: scale(0.9); /* zoom de 20% */
     }
     
+    .dropdown{
+      position:relative;
+      list-style:none;
+    }
+
+    .dropdown-toggle{
+      background:none;
+      border:none;
+      color:#94836c;
+      cursor:pointer;
+      font:inherit;
+      padding:0px 14px;
+      font-weight: 700;
+    }
+
+
+   .der2{
+      position:absolute;
+      top:100%;
+      left:0;
+
+      min-width:220px;
+
+      background:#111;
+      border-radius:12px;
+
+      padding:10px;
+      margin-top:8px;
+
+      list-style:none;
+
+      /*display:flex;
+      flex-direction:column;
+      gap:8px;*/
+
+      z-index:1000;
+
+    }
+
+    .der2 li{
+      /*list-style:none;*/
+       margin:6px 0;
+    }
+
+    .der2 a{
+      display:block;
+      text-decoration:none;
+      color:white;
+
+      padding:10px 12px;
+      border-radius:8px;
+
+      /*transition:.2s;*/
+    }
+
+    .der2 a:hover{
+      background:#222;
+    }
+
     .cta{
       background:var(--accent);
       color:#090909;
@@ -488,7 +556,7 @@
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap: 18px;
-      height: 720px;
+      height: 320px;
       width: 100%;
       max-width: 1100px;
       margin: auto;
@@ -506,12 +574,6 @@
        background-position: center;
     }
 
-    #boutique:hover{
-      background-image: url(../img/sweet.png);
-      background-size: 100% 100%; /* augmente la taille à 150% */  
-      background-repeat: no-repeat;  
-      background-position: center;
-    }
 
     #spiritualité:hover{
       background-image: url(../img/boisson.png);
@@ -520,33 +582,6 @@
       background-position: center;
     }
 
-    #parfums:hover{
-      background-image: url(../img/parfums.jpg);
-      background-size: 100% 100%; /* augmente la taille à 150% */  
-      background-repeat: no-repeat;  
-      background-position: center;
-    }
-
-    #divers:hover{
-      background-image: url(../img/png.png);
-      background-size: 100% 100%; /* augmente la taille à 150% */  
-       background-repeat: no-repeat;  
-       background-position: center;
-    }
-
-    #pret-a-porter:hover{
-      background-image: url(../img/tenu.png);
-      background-size: 100% 100%; /* augmente la taille à 150% */  
-      background-repeat: no-repeat;  
-      background-position: center;
-    }
-
-    #sante:hover{
-      background-image: url(../img/soin.png);
-      background-size: 100% 100%; /* augmente la taille à 150% */  
-      background-repeat: no-repeat;  
-      background-position: center;
-    }
 
     #music:hover{
       background-image: url(../img/song.png);
@@ -555,12 +590,6 @@
       background-position: center;
     }
 
-    #hébergements:hover{
-      background-image: url(../img/hotel.png);
-      background-size: 100% 100%; /* augmente la taille à 150% */  
-      background-repeat: no-repeat;  
-      background-position: center;
-    }
 
     .bandecolor{
       background: #d9b790;

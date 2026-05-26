@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAWON +</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.9)),
+    url("https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1800");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  min-height:100vh;
+}
+
+header{
+  text-align:center;
+  padding:80px 20px 40px;
+}
+
+header h1{
+  font-size:3rem;
+  color:#ffb347;
+  margin-bottom:15px;
+}
+
+header p{
+  max-width:800px;
+  margin:auto;
+  font-size:1.1rem;
+  line-height:1.8;
+  color:#eee;
+}
+
+main{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px 80px;
+}
+
+.section{
+  background:rgba(15,15,15,.82);
+  border:1px solid rgba(255,179,71,.15);
+  border-radius:18px;
+  padding:35px;
+  margin-bottom:35px;
+  backdrop-filter:blur(8px);
+}
+
+.section h2{
+  color:#ffb347;
+  margin-bottom:18px;
+  font-size:2rem;
+}
+
+.section p{
+  line-height:1.9;
+  color:#ddd;
+  margin-bottom:15px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-top:25px;
+}
+
+.card{
+  background:rgba(255,255,255,.03);
+  border-radius:16px;
+  padding:25px;
+  border:1px solid rgba(255,179,71,.1);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#ffb347;
+}
+
+.card h3{
+  color:#ffb347;
+  margin-bottom:12px;
+}
+
+.card p{
+  color:#ddd;
+}
+
+.donation-box{
+  text-align:center;
+}
+
+.amounts{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  justify-content:center;
+  margin:25px 0;
+}
+
+.amounts button{
+  background:#ffb347;
+  color:black;
+  border:none;
+  padding:14px 24px;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.amounts button:hover{
+  background:#ffd27a;
+}
+
+.custom{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.custom input{
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  width:220px;
+}
+
+.custom button{
+  background:#ffb347;
+  border:none;
+  padding:14px 22px;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#bbb;
+  font-size:.95rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Faire un Don</h1>
+  <p>
+    Votre soutien nous permet de développer nos projets autour de la spiritualité,
+    de la musique, du cacao, du partage humain et des initiatives porteuses de sens.
+    Chaque contribution compte et participe directement à faire grandir cette vision.
+  </p>
+</header>
+
+<main>
+
+<section class="section">
+  <h2>Pourquoi nous soutenir ?</h2>
+
+  <p>
+    Harmonia réunit plusieurs univers complémentaires : l’élévation intérieure,
+    l’expression artistique, la transmission culturelle et la création d’opportunités
+    durables autour du cacao et du partenariat.
+  </p>
+
+  <p>
+    Les dons servent à développer nos contenus, soutenir les projets humains,
+    renforcer nos collaborations et créer des expériences accessibles à tous.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Votre impact</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Spiritualité</h3>
+      <p>
+        Soutien aux contenus inspirants, accompagnements,
+        ateliers et espaces de développement intérieur.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Musique</h3>
+      <p>
+        Création musicale, diffusion artistique,
+        projets créatifs et collaborations.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Cacao</h3>
+      <p>
+        Valorisation des producteurs, projets responsables
+        et mise en avant d’une culture authentique.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section donation-box">
+
+  <h2>Choisir un montant</h2>
+
+  <p>
+    Vous pouvez sélectionner un montant rapide
+    ou entrer votre propre contribution.
+  </p>
+
+  <div class="amounts">
+    <button>10 €</button>
+    <button>25 €</button>
+    <button>50 €</button>
+    <button>100 €</button>
+    <button>250 €</button>
+  </div>
+
+  <div class="custom">
+    <input type="number" placeholder="Montant libre (€)">
+    <button>Faire un don</button>
+  </div>
+
+</section>
+
+<section class="section">
+  <h2>Merci pour votre soutien</h2>
+
+  <p>
+    Derrière chaque contribution, il y a un geste concret
+    qui participe à construire un projet durable et vivant.
+  </p>
+
+  <p>
+    Merci de faire partie de cette aventure.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  © 2026 BAWON + — Merci pour votre générosité
+</footer>
+
+</body>
+</html>
