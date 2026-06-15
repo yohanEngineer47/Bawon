@@ -1,115 +1,151 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BAWON+</title>
+    <title>BAWON +</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+    <style>
 
-<style>
+      body{
+          margin:0;
+          font-family:Montserrat,sans-serif;
+          background:#050505;
+          color:white;
+      }
 
-body{
-    margin:0;
-    font-family:Montserrat,sans-serif;
-    background:#050505;
-    color:white;
-}
+      .hero{
 
-.hero{
+          min-height:100vh;
 
-    min-height:100vh;
+          background:
+          linear-gradient(
+              rgba(255,120,20,0.35),
+              rgba(0,0,0,0.85)
+          ),
+          url("img/spiritualite.jpg");
 
-    background:
-    linear-gradient(
-        rgba(255,120,20,0.35),
-        rgba(0,0,0,0.85)
-    ),
-    url("img/spiritualite.jpg");
+          background-size:cover;
+          background-position:center;
 
-    background-size:cover;
-    background-position:center;
+          display:flex;
+          align-items:center;
+      }
 
-    display:flex;
-    align-items:center;
-}
+      .content{
 
-.content{
+          max-width:700px;
 
-    max-width:700px;
+          padding:80px;
+      }
 
-    padding:80px;
-}
+      h1{
 
-h1{
+          font-size:70px;
 
-    font-size:70px;
+          margin:0;
 
-    margin:0;
+          font-family:"Playfair Display", serif;
+      }
 
-    font-family:"Playfair Display", serif;
-}
+      h1 span{
 
-h1 span{
+          color:#ff9f2a;
+      }
 
-    color:#ff9f2a;
-}
+      p{
 
-p{
+          font-size:18px;
 
-    font-size:18px;
+          line-height:1.8;
 
-    line-height:1.8;
+          color:#eee;
 
-    color:#eee;
+          margin:25px 0;
+      }
 
-    margin:25px 0;
-}
+      .btn{
 
-.btn{
+          display:inline-block;
 
-    display:inline-block;
+          padding:14px 28px;
 
-    padding:14px 28px;
+          border-radius:8px;
 
-    border-radius:8px;
+          background:#ff9f2a;
 
-    background:#ff9f2a;
+          color:black;
 
-    color:black;
+          text-decoration:none;
 
-    text-decoration:none;
+          font-weight:700;
+      }
 
-    font-weight:700;
-}
-
-</style>
-</head>
-<body>
-
-<section class="hero">
-
-    <div class="content">
-
-        <h1>
-            Spiritualité & <span>Culture</span>
-        </h1>
-
-        <p>
-            Préserver et faire rayonner
-            les traditions haïtiennes,
-            la spiritualité, les arts,
-            et la richesse culturelle du pays.
-        </p>
-
-        <a href="../index.html" class="btn">
-            Retour au site
-        </a>
-
+    </style>
+  </head>
+  <body>
+     <div class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="logo"> <!-- pour les logos des réseaux sociaux -->
+          <div>
+            <img src="../img/ytb.png" />
+          </div>
+          <div>
+            <img src="../img/x.png" />
+          </div>
+          <div>
+            <img src="../img/facebook.png" />
+          </div>
+        </div>
+        <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
+          <div class="les-liens">
+            <a href="../index.html#section-title" class="nav2">Services</a>
+            <a href="contact.html" class="nav2">Contact</a>
+            <li class="dropdown">
+              <button class="nav2 dropdown-toggle">Investissement</button>
+              <ul class="der2" hidden>
+                <li><a href="fournisseur.html">Partenariat</a></li>
+                <li><a href="investisseur_vip.html">Investisseur_VIP</a></li>
+                <li><a href="investissement_rentabilite.html">Investissement</a></li>
+              </ul>
+            </li>
+            <a href="../index.html#hist" class="nav2">À propos</a>
+            <a class="cta" href="#">Réserver</a>
+          </div>
+          <div class="lien-logo">
+             <a href="login.html"><img src="../img/user.png" class="cta2" alt="login" title="se connecter" /></a>
+          </div>
+        </nav>
+      </div>
     </div>
 
-</section>
 
-</body>
+    <section class="hero">
+
+        <div class="content">
+
+            <h1>
+                Spiritualité & <span>Culture</span>
+            </h1>
+
+            <p>
+                Préserver et faire rayonner
+                les traditions haïtiennes,
+                la spiritualité, les arts,
+                et la richesse culturelle du pays.
+            </p>
+
+            <a href="../index.html#section-title" class="btn">
+                Retour au site
+            </a>
+
+        </div>
+
+    </section>
+    <script src="../script/script.js"></script>
+    <script type="module" src="../script/firebase.js"></script>
+  </body>
 </html>

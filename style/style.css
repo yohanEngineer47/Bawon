@@ -1,3 +1,6 @@
+   /*
+    pour les éléments racines de la page
+   */
    :root{
       --hero-img: url('../img/img_back.png');
       background-repeat: no-repeat;
@@ -14,6 +17,11 @@
       --form-border: #111;
     }
 
+    /*
+
+      Pour tout les éléments de la pages sélectionner
+
+    */
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
@@ -313,7 +321,7 @@
     filter: blur(22px);
   }
 
-
+  /* l'encadrer du switch pour changer de langue */
     .lang-switch{
       position:absolute;
       display:inline-block;
@@ -566,7 +574,7 @@
       font-weight: normal;
       color: white;
     }
-
+  /* LES SERVICES PROPOSÉS */
     #cacao:hover{
       background-image: url(../img/cacao_img.png);
        background-size: 100% 100%; /* augmente la taille à 150% */  

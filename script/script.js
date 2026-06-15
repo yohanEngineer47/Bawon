@@ -1,4 +1,4 @@
-// for switch in type of investissement in menu
+// for les translations dans le menu pour les différents type d'investissement proposé
 const dropdownToggle = document.querySelector(".dropdown-toggle");
 const dropdownMenu = document.querySelector(".der2");
 
@@ -57,7 +57,7 @@ document.addEventListener("click", (e) => {
 
 });
 
-// for switch laguages
+// pour changer de langue
 const toggle = document.querySelector('.lang-toggle');
 const menu = document.getElementById('lang-menu');
 
@@ -157,7 +157,7 @@ menu.addEventListener('click', (e) => {
       map.appendChild(iframe);
     })();
 
-  // animation scroll BAWON
+  // l'animation du scroll BAWON
    const hero = document.querySelector('.hero');
     const header = document.querySelector('.topbar');
 
@@ -166,7 +166,7 @@ menu.addEventListener('click', (e) => {
       const heroHeight = hero.offsetHeight;
       const scrollY = window.scrollY;
 
-      // quand tu dépasses le hero
+      // quand tu dépasses le hero (la partie vitrine de la page)
       if(scrollY > heroHeight * 0.4){
         hero.classList.add('scrolled'); // pour l'effet hero
         header.classList.add('scrolled'); // pour l'effet header

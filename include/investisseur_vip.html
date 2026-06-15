@@ -1,154 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Investisseur VIP | BAWON+</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAWON +</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
 
-<style>
+    <style>
 
-body{
-margin:0;
-font-family:Montserrat,sans-serif;
-background:#060606;
-color:white;
-}
+      body{
+      margin:0;
+      font-family:Montserrat,sans-serif;
+      background:#060606;
+      color:white;
+      }
 
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
+      .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
 
-background:
-linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.88)),
-url("img/vip.jpg");
+      background:
+      linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.88)),
+      url("img/vip.jpg");
 
-background-size:cover;
-background-position:center;
-}
+      background-size:cover;
+      background-position:center;
+      }
 
-.content{
-max-width:760px;
-padding:80px;
-}
+      .content{
+      max-width:760px;
+      padding:80px;
+      }
 
-h1{
-font-size:72px;
-font-family:Playfair Display,serif;
-margin:0;
-}
+      h1{
+      font-size:72px;
+      font-family:Playfair Display,serif;
+      margin:0;
+      }
 
-span{color:#d9b36b;}
+      span{color:#d9b36b;}
 
-p{
-font-size:18px;
-line-height:1.8;
-color:#ddd;
-}
+      p{
+      font-size:18px;
+      line-height:1.8;
+      color:#ddd;
+      }
 
-.btn{
-display:inline-block;
-padding:14px 30px;
-background:#d9b36b;
-color:black;
-text-decoration:none;
-border-radius:8px;
-font-weight:700;
-margin-top:25px;
-}
+      .btn{
+      display:inline-block;
+      padding:14px 30px;
+      background:#d9b36b;
+      color:black;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:700;
+      margin-top:25px;
+      }
 
-.section{
-padding:80px;
-}
+      .section{
+      padding:80px;
+      }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
+      .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+      }
 
-.card{
-background:#111;
-padding:30px;
-border-radius:14px;
-border:1px solid rgba(217,179,107,.15);
-}
+      .card{
+      background:#111;
+      padding:30px;
+      border-radius:14px;
+      border:1px solid rgba(217,179,107,.15);
+      }
 
-.card h3{
-color:#d9b36b;
-}
+      .card h3{
+      color:#d9b36b;
+      }
 
-</style>
-</head>
-<body>
+    </style>
+  </head>
 
-<section class="hero">
+  <body>
 
-<div class="content">
+    <div class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="logo"> <!-- pour les logos des réseaux sociaux -->
+          <div>
+            <img src="../img/ytb.png" />
+          </div>
+          <div>
+            <img src="../img/x.png" />
+          </div>
+          <div>
+            <img src="../img/facebook.png" />
+          </div>
+        </div>
+        <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
+          <div class="les-liens">
+            <a href="../index.html#section-title" class="nav2">Services</a>
+            <a href="contact.html" class="nav2">Contact</a>
+            <li class="dropdown">
+              <button class="nav2 dropdown-toggle">Investissement</button>
+              <ul class="der2" hidden>
+                <li><a href="fournisseur.html">Partenariat</a></li>
+                <li><a href="investisseur_vip.html">Investisseur_VIP</a></li>
+                <li><a href="investissement_rentabilite.html">Investissement</a></li>
+              </ul>
+            </li>
+            <a href="../index.html#hist" class="nav2">À propos</a>
+            <a class="cta" href="#">Réserver</a>
+          </div>
+          <div class="lien-logo">
+             <a href="login.html"><img src="../img/user.png" class="cta2" alt="login" title="se connecter" /></a>
+          </div>
+        </nav>
+      </div>
+    </div>
 
-<h1>Investisseur <span>VIP</span></h1>
+    <section class="hero">
 
-<p>
-Accédez à une expérience exclusive conçue pour les investisseurs stratégiques,
-les partenaires institutionnels et les entrepreneurs visionnaires souhaitant
-participer au développement durable d’Haïti.
-</p>
+      <div class="content">
 
-<p>
-BAWON+ sélectionne des opportunités à fort potentiel dans plusieurs secteurs :
-immobilier, technologie, agriculture, éducation, énergie et innovation culturelle.
-</p>
+        <h1>Investisseur <span>VIP</span></h1>
 
-<a href="contact.html" class="btn">
-Demander un rendez-vous privé
-</a>
+        <p>
+        Accédez à une expérience exclusive conçue pour les investisseurs stratégiques,
+        les partenaires institutionnels et les entrepreneurs visionnaires souhaitant
+        participer au développement durable d’Haïti.
+        </p>
 
-</div>
-</section>
+        <p>
+        BAWON+ sélectionne des opportunités à fort potentiel dans plusieurs secteurs :
+        immobilier, technologie, agriculture, éducation, énergie et innovation culturelle.
+        </p>
+        <!--- Prise de rendez-vous -->
+        <a href="contact.html" class="btn">
+        Demander un rendez-vous privé
+        </a>
 
-<section class="section">
+      </div>
+    </section>
+  <!---
 
-<h2 style="color:#d9b36b;">Vos avantages exclusifs</h2>
+      LES AVANTAGES DE CE SERVICE
 
-<div class="cards">
+    -->
+    <section class="section">
 
-<div class="card">
-<h3>Portefeuille premium</h3>
-<p>
-Accès aux investissements à rendement élevé sélectionnés
-par notre équipe d’analyse.
-</p>
-</div>
+      <h2 style="color:#d9b36b;">Vos avantages exclusifs</h2>
 
-<div class="card">
-<h3>Suivi personnalisé</h3>
-<p>
-Accompagnement direct, rapports détaillés,
-réunions privées et analyse stratégique.
-</p>
-</div>
+      <div class="cards">
 
-<div class="card">
-<h3>Réseau privilégié</h3>
-<p>
-Accès à notre réseau d’entrepreneurs,
-institutions et décideurs économiques.
-</p>
-</div>
+        <div class="card">
+          <h3>Portefeuille premium</h3>
+          <p>
+          Accès aux investissements à rendement élevé sélectionnés
+          par notre équipe d’analyse.
+          </p>
+        </div>
 
-<div class="card">
-<h3>Rentabilité long terme</h3>
-<p>
-Vision durable combinée à la croissance
-et à l’impact local.
-</p>
-</div>
+        <div class="card">
+          <h3>Suivi personnalisé</h3>
+          <p>
+          Accompagnement direct, rapports détaillés,
+          réunions privées et analyse stratégique.
+          </p>
+        </div>
 
-</div>
+        <div class="card">
+          <h3>Réseau privilégié</h3>
+          <p>
+          Accès à notre réseau d’entrepreneurs,
+          institutions et décideurs économiques.
+          </p>
+        </div>
 
-</section>
+        <div class="card">
+          <h3>Rentabilité long terme</h3>
+          <p>
+          Vision durable combinée à la croissance
+          et à l’impact local.
+          </p>
+        </div>
 
-</body>
+      </div>
+
+    </section>
+    <script src="../script/script.js"></script>
+    <script type="module" src="../script/firebase.js"></script>
+  </body>
 </html>

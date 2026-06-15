@@ -1,36 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mentions légales - BAWON+</title>
-  <link rel="stylesheet" href="../style/style.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BAWON +</title>
+    <link rel="stylesheet" href="../style/style.css">
+  </head>
 
-<body>
-<div class="topbar">
-  <div class="topbar-inner">
-    <a href="../index.html" class="nav2">Accueil</a>
-  </div>
-</div>
+  <body>
+    <!---
 
-<main style="padding:120px 20px; max-width:900px; margin:auto; color:white;">
-  <h1 style="color:#d9b790;">Mentions légales</h1>
+      LA PARTIE NAV
 
-  <p>
-    Le site BAWON+ est édité par une société fictive ou réelle (à compléter).
-  </p>
+      -->
+      <div class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="logo"> <!-- pour les logos des réseaux sociaux -->
+          <div>
+            <img src="../img/ytb.png" />
+          </div>
+          <div>
+            <img src="../img/x.png" />
+          </div>
+          <div>
+            <img src="../img/facebook.png" />
+          </div>
+        </div>
+        <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
+          <div class="les-liens">
+            <a href="../index.html#section-title" class="nav2">Services</a>
+            <a href="contact.html" class="nav2">Contact</a>
+            <li class="dropdown">
+              <button class="nav2 dropdown-toggle">Investissement</button>
+              <ul class="der2" hidden>
+                <li><a href="fournisseur.html">Partenariat</a></li>
+                <li><a href="investisseur_vip.html">Investisseur_VIP</a></li>
+                <li><a href="investissement_rentabilite.html">Investissement</a></li>
+              </ul>
+            </li>
+            <a href="../index.html#hist" class="nav2">À propos</a>
+            <a class="cta" href="#">Réserver</a>
+          </div>
+          <div class="lien-logo">
+             <a href="login.html"><img src="../img/user.png" class="cta2" alt="login" title="se connecter" /></a>
+          </div>
+        </nav>
+      </div>
+    </div>
 
-  <h2>Éditeur</h2>
-  <p>BAWON+ - Tous droits réservés</p>
 
-  <h2>Hébergement</h2>
-  <p>Site hébergé par un fournisseur à préciser.</p>
 
-  <h2>Propriété intellectuelle</h2>
-  <p>
-    Tous les contenus présents sur ce site (images, textes, logos) sont protégés.
-  </p>
-</main>
-</body>
+    <main style="padding:120px 20px; max-width:900px; margin:auto; color:white;">
+      <h1 style="color:#d9b790;">Mentions légales</h1>
+
+      <p>
+        Le site BAWON+ est édité par une société fictive ou réelle (à compléter).
+      </p>
+
+      <h2>Éditeur</h2>
+      <p>BAWON+ - Tous droits réservés</p>
+
+      <h2>Hébergement</h2>
+      <p>Site hébergé par un fournisseur à préciser.</p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>
+        Tous les contenus présents sur ce site (images, textes, logos) sont protégés.
+      </p>
+    </main>
+    <script src="../script/script.js"></script>
+    <script type="module" src="../script/firebase.js"></script>
+  </body>
 </html>

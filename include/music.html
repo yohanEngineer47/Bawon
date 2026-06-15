@@ -1,114 +1,152 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BAWON+</title>
+    <title>BAWON +</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
 
-<style>
 
-body{
-    margin:0;
-    background:#04060c;
-    color:white;
-    font-family:Montserrat,sans-serif;
-}
+    <style>
 
-.hero{
+    body{
+        margin:0;
+        background:#04060c;
+        color:white;
+        font-family:Montserrat,sans-serif;
+    }
 
-    min-height:100vh;
+    .hero{
 
-    background:
-    linear-gradient(
-        rgba(0,80,255,0.35),
-        rgba(0,0,0,0.85)
-    ),
-    url("img/music.jpg");
+        min-height:100vh;
 
-    background-size:cover;
-    background-position:center;
+        background:
+        linear-gradient(
+            rgba(0,80,255,0.35),
+            rgba(0,0,0,0.85)
+        ),
+        url("img/music.jpg");
 
-    display:flex;
-    align-items:center;
-}
+        background-size:cover;
+        background-position:center;
 
-.content{
+        display:flex;
+        align-items:center;
+    }
 
-    max-width:700px;
-    padding:80px;
-}
+    .content{
 
-h1{
+        max-width:700px;
+        padding:80px;
+    }
 
-    font-size:70px;
+    h1{
 
-    margin:0;
+        font-size:70px;
 
-    font-family:"Playfair Display", serif;
-}
+        margin:0;
 
-span{
+        font-family:"Playfair Display", serif;
+    }
 
-    color:#4da8ff;
-}
+    span{
 
-p{
+        color:#4da8ff;
+    }
 
-    font-size:18px;
+    p{
 
-    line-height:1.8;
+        font-size:18px;
 
-    color:#eee;
+        line-height:1.8;
 
-    margin:25px 0;
-}
+        color:#eee;
 
-.btn{
+        margin:25px 0;
+    }
 
-    display:inline-block;
+    .btn{
 
-    padding:14px 28px;
+        display:inline-block;
 
-    background:#4da8ff;
+        padding:14px 28px;
 
-    color:black;
+        background:#4da8ff;
 
-    text-decoration:none;
+        color:black;
 
-    border-radius:8px;
+        text-decoration:none;
 
-    font-weight:700;
-}
+        border-radius:8px;
 
-</style>
-</head>
-<body>
+        font-weight:700;
+    }
 
-<section class="hero">
+    </style>
+  </head>
+  <body>
 
-    <div class="content">
-
-        <h1>
-            Musique & <span>Création</span>
-        </h1>
-
-        <p>
-            Accompagner les artistes,
-            soutenir la création musicale,
-            les studios et la diffusion
-            internationale du talent haïtien.
-        </p>
-
-        <a href="../index.html" class="btn">
-            Retour au site
-        </a>
-
+      <div class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="logo"> <!-- pour les logos des réseaux sociaux -->
+          <div>
+            <img src="../img/ytb.png" />
+          </div>
+          <div>
+            <img src="../img/x.png" />
+          </div>
+          <div>
+            <img src="../img/facebook.png" />
+          </div>
+        </div>
+        <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
+          <div class="les-liens">
+            <a href="../index.html#section-title" class="nav2">Services</a>
+            <a href="contact.html" class="nav2">Contact</a>
+            <li class="dropdown">
+              <button class="nav2 dropdown-toggle">Investissement</button>
+              <ul class="der2" hidden>
+                <li><a href="fournisseur.html">Partenariat</a></li>
+                <li><a href="investisseur_vip.html">Investisseur_VIP</a></li>
+                <li><a href="investissement_rentabilite.html">Investissement</a></li>
+              </ul>
+            </li>
+            <a href="../index.html#hist" class="nav2">À propos</a>
+            <a class="cta" href="#">Réserver</a>
+          </div>
+          <div class="lien-logo">
+             <a href="login.html"><img src="../img/user.png" class="cta2" alt="login" title="se connecter" /></a>
+          </div>
+        </nav>
+      </div>
     </div>
 
-</section>
+    <section class="hero">
 
-</body>
+        <div class="content">
+
+            <h1>
+                Musique & <span>Création</span>
+            </h1>
+
+            <p>
+                Accompagner les artistes,
+                soutenir la création musicale,
+                les studios et la diffusion
+                internationale du talent haïtien.
+            </p>
+
+            <a href="../index.html#section-title" class="btn">
+                Retour au site
+            </a>
+
+        </div>
+
+    </section>
+    <script src="../script/script.js"></script>
+    <script type="module" src="../script/firebase.js"></script>
+  </body>
 </html>

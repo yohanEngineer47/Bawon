@@ -1,5 +1,7 @@
+<!-- la page principal, de Bawon -->
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,10 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link href="style/style.css" rel="stylesheet">
 </head>
+
 <body>
+  <!---
+
+    Toute la partie nav
+
+  -->
   <div class="topbar" role="banner">
     <div class="topbar-inner">
-      <div class="logo">
+      <div class="logo"> <!-- pour les logos des réseaux sociaux -->
         <div>
           <img src="img/ytb.png" />
         </div>
@@ -21,7 +29,7 @@
           <img src="img/facebook.png" />
         </div>
       </div>
-      <nav class="nav" aria-label="Navigation principale">
+      <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
         <div class="les-liens">
           <a href="#section-title" class="nav2">Services</a>
           <a href="include/contact.html" class="nav2">Contact</a>
@@ -42,12 +50,17 @@
       </nav>
     </div>
   </div>
+
   <main>
+    <!--
+
+      Partie vitrine de la page Bawon+
+
+    -->
     <section class="hero" aria-label="Hero">
       <div class="hero-bg" aria-hidden="true"></div>
-       
       <div class="hero-inner">
-        <div class="lang-switch">
+        <div class="lang-switch"> <!-- Boutton pour changer de langue -->
           <button class="lang-toggle"  aria-expanded="false" aria-controls="lang-menu">Français</button>
           <ul id="lang-menu" class="lang-menu" hidden>
             <li><button data-lang="Français">Français</button></li>
@@ -75,6 +88,11 @@
         </div>
       </div>
     </section>
+    <!--
+
+      Biographie rapide de l'entreprise
+
+    -->
     <section class="about" aria-label="À propos">
       <div style="flex-basis:360px; display:flex;align-items:center;justify-content:center">
         <div style="width:100%;text-align:center;color:#616060">
@@ -106,8 +124,12 @@
     </section>
     <section class="bandecolor">
     </section>
-    <section class="blockvideo">
-      <!--- bande colorée floue à gauche -->
+    <section class="blockvideo"> <!--- pour la vidéo -->
+      <!---
+
+        Bande colorée floue à gauche
+
+      -->
      <div class="left-band"></div>
       <div class="content">
         <p>Éveillez vos sens</p> 
@@ -123,7 +145,11 @@
       </div>
       
     </section>
+    <!---
 
+      LES SERVICES PROPOSÉS
+
+    -->
     <section class="poles" aria-label="Nos pôles">
       <h2 class="section-title" id="section-title">NOS SERVICES</h2>
       <div class="grid" role="list">
@@ -144,7 +170,11 @@
           15, rue du Château 75001 Paris, France<br>
           Tel: 01 23 45 67 89 • Fax: 01 23 45 67 99
         </div>
+          <!---
 
+          Partie Contact
+
+          -->
         <div class="contact-content">
           <div class="left-col">
             <div style="font-weight:700; font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black !important;" class="section-title;">HORAIRES D'OUVERTURE</div>
@@ -179,7 +209,14 @@
         </div>
       </div>
     </section>
+    <!---
 
+    Partie bas de page pour
+    les politique de confidentialité
+    ainsi que pour tout autre forme de
+    respect et protection des données
+
+    -->
     <footer class="site-footer" role="contentinfo">
       <div class="inner">
         <div class="footer-glo" style="display: flex; justify-content: space-around; gap: 80px;">
@@ -195,5 +232,7 @@
 
   <button class="chat-btn" aria-label="Chat">💬</button>
   <script src="script/script.js"></script>
+  <script type="module" src="script/firebase.js"></script>
 </body>
+
 </html>

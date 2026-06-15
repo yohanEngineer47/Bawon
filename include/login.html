@@ -1,285 +1,323 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>BAWON+</title>
+    <title>BAWON+</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 
-  <style>
+    <style>
 
-    body{
-      margin:0;
-      min-height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      background:
-      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-      url("img/img_back.png");
-      background-size:cover;
-      background-position:center;
-      font-family:"Montserrat", sans-serif;
-      overflow:hidden;
-    }
-
-    .login-container{
-      width:420px;
-      padding:50px;
-      border-radius:20px;
-
-      background:rgba(0,0,0,0.65);
-
-      backdrop-filter:blur(15px);
-
-      border:1px solid rgba(255,255,255,0.1);
-
-      box-shadow:0 0 40px rgba(0,0,0,0.5);
-
-      color:white;
-
-      position:relative;
-    }
-
-    .login-container::before{
-      content:"";
-      position:absolute;
-      top:-50px;
-      left:-50px;
-      width:200px;
-      height:200px;
-
-      background:linear-gradient(
-      45deg,
-      rgba(255,177,31,0.4),
-      rgba(106,59,224,0.4)
-      );
-
-      filter:blur(70px);
-      z-index:-1;
-    }
-
-    .logo{
-      text-align:center;
-      margin-bottom:30px;
-    }
-
-    .logo h1{
-      color:rgb(255,177,31);
-      font-size:60px;
-      font-weight:200;
-      margin:0;
-      letter-spacing:4px;
-    }
-
-    .logo p{
-      color:#d9b790;
-      margin-top:10px;
-      font-style:italic;
-      font-family:"Playfair Display", serif;
-    }
-
-    .input-group{
-      margin-bottom:20px;
-    }
-
-    .input-group label{
-      display:block;
-      margin-bottom:8px;
-      color:#d9b790;
-      font-size:14px;
-    }
-
-    .input-group input{
-      width:100%;
-      padding:14px;
-      border:none;
-      outline:none;
-      border-radius:8px;
-
-      background:rgba(255,255,255,0.08);
-
-      color:white;
-      font-size:15px;
-
-      transition:0.3s;
-    }
-
-    .input-group input:focus{
-      background:rgba(255,255,255,0.15);
-      border:1px solid #d9b790;
-    }
-
-    .remember{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      margin-bottom:25px;
-      color:#ccc;
-      font-size:14px;
-    }
-
-    .login-btn{
-      width:100%;
-      padding:15px;
-      border:none;
-      border-radius:10px;
-
-      background:linear-gradient(
-      90deg,
-      rgb(255,177,31),
-      #d9b790
-      );
-
-      color:black;
-      font-weight:700;
-      font-size:16px;
-
-      cursor:pointer;
-
-      transition:0.3s;
-    }
-
-    .login-btn:hover{
-      transform:scale(0.98);
-      background:white;
-    }
-
-    .bottom-text{
-      text-align:center;
-      margin-top:25px;
-      color:#aaa;
-      font-size:14px;
-    }
-
-    .bottom-text a{
-      color:#d9b790;
-      text-decoration:none;
-      font-weight:600;
-    }
-
-    .status{
-      margin-top:15px;
-      text-align:center;
-      color:lightgreen;
-      display:none;
-    }
-
-    @media(max-width:500px){
+      body{
+        margin:0;
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("img/img_back.png");
+        background-size:cover;
+        background-position:center;
+        font-family:"Montserrat", sans-serif;
+        overflow:hidden;
+      }
 
       .login-container{
-        width:90%;
-        padding:30px;
+        width:420px;
+        padding:50px;
+        border-radius:20px;
+
+        background:rgba(0,0,0,0.65);
+
+        backdrop-filter:blur(15px);
+
+        border:1px solid rgba(255,255,255,0.1);
+
+        box-shadow:0 0 40px rgba(0,0,0,0.5);
+
+        color:white;
+
+        position:relative;
+      }
+
+      .login-container::before{
+        content:"";
+        position:absolute;
+        top:-50px;
+        left:-50px;
+        width:200px;
+        height:200px;
+
+        background:linear-gradient(
+        45deg,
+        rgba(255,177,31,0.4),
+        rgba(106,59,224,0.4)
+        );
+
+        filter:blur(70px);
+        z-index:-1;
+      }
+
+      .logo{
+        text-align:center;
+        margin-bottom:30px;
       }
 
       .logo h1{
-        font-size:42px;
+        color:rgb(255,177,31);
+        font-size:60px;
+        font-weight:200;
+        margin:0;
+        letter-spacing:4px;
       }
 
-    }
+      .logo p{
+        color:#d9b790;
+        margin-top:10px;
+        font-style:italic;
+        font-family:"Playfair Display", serif;
+      }
 
-  </style>
-</head>
+      .input-group{
+        margin-bottom:20px;
+      }
 
-<body>
+      .input-group label{
+        display:block;
+        margin-bottom:8px;
+        color:#d9b790;
+        font-size:14px;
+      }
 
-  <div class="login-container">
+      .input-group input{
+        width:100%;
+        padding:14px;
+        border:none;
+        outline:none;
+        border-radius:8px;
 
-    <div class="logo">
-      <h1>BAWON+</h1>
-      <p>L'excellence haïtienne</p>
-    </div>
+        background:rgba(255,255,255,0.08);
 
-    <form id="loginForm">
+        color:white;
+        font-size:15px;
 
-      <div class="input-group">
-        <label>Email</label>
-        <input type="email" id="email" required>
-      </div>
+        transition:0.3s;
+      }
 
-      <div class="input-group">
-        <label>Mot de passe</label>
-        <input type="password" id="password" required>
-      </div>
+      .input-group input:focus{
+        background:rgba(255,255,255,0.15);
+        border:1px solid #d9b790;
+      }
 
-      <div class="remember">
-        <input type="checkbox" id="remember">
-        <label for="remember">
-          Rester connecté
-        </label>
-      </div>
+      .remember{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        margin-bottom:25px;
+        color:#ccc;
+        font-size:14px;
+      }
 
-      <button type="submit" class="login-btn">
-        Se connecter
-      </button>
+      .login-btn{
+        width:100%;
+        padding:15px;
+        border:none;
+        border-radius:10px;
 
-      <div class="status" id="status">
-        Connexion réussie
-      </div>
+        background:linear-gradient(
+        90deg,
+        rgb(255,177,31),
+        #d9b790
+        );
 
-    </form>
+        color:black;
+        font-weight:700;
+        font-size:16px;
 
-    <div class="bottom-text">
-      Pas encore de compte ?
-      <a href="register.html">Créer un compte</a>
-    </div>
+        cursor:pointer;
 
-  </div>
+        transition:0.3s;
+      }
 
-<script>
+      .login-btn:hover{
+        transform:scale(0.98);
+        background:white;
+      }
 
-  // Vérifie si déjà connecté
-  if(localStorage.getItem("bawonUser")){
+      .bottom-text{
+        text-align:center;
+        margin-top:25px;
+        color:#aaa;
+        font-size:14px;
+      }
 
-      window.location.href = "index.html";
+      .bottom-text a{
+        color:#d9b790;
+        text-decoration:none;
+        font-weight:600;
+      }
 
-  }
+      .status{
+        margin-top:15px;
+        text-align:center;
+        color:lightgreen;
+        display:none;
+      }
 
-  const form = document.getElementById("loginForm");
+      @media(max-width:500px){
 
-  form.addEventListener("submit", function(e){
+        .login-container{
+          width:90%;
+          padding:30px;
+        }
 
-      e.preventDefault();
-
-      const email = document.getElementById("email").value;
-
-      const password = document.getElementById("password").value;
-
-      const remember = document.getElementById("remember").checked;
-
-      // Exemple simple
-      const userData = {
-
-          email: email,
-          logged: true
-
-      };
-
-      // Sauvegarde session
-      if(remember){
-
-          localStorage.setItem(
-            "bawonUser",
-            JSON.stringify(userData)
-          );
+        .logo h1{
+          font-size:42px;
+        }
 
       }
 
-      document.getElementById("status").style.display = "block";
+    </style>
+  </head>
 
-      setTimeout(() => {
+  <body>
 
-          window.location.href = "../index.html";
+      <div class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="logo"> <!-- pour les logos des réseaux sociaux -->
+          <div>
+            <img src="../img/ytb.png" />
+          </div>
+          <div>
+            <img src="../img/x.png" />
+          </div>
+          <div>
+            <img src="../img/facebook.png" />
+          </div>
+        </div>
+        <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
+          <div class="les-liens">
+            <a href="../index.html#section-title" class="nav2">Services</a>
+            <a href="contact.html" class="nav2">Contact</a>
+            <li class="dropdown">
+              <button class="nav2 dropdown-toggle">Investissement</button>
+              <ul class="der2" hidden>
+                <li><a href="fournisseur.html">Partenariat</a></li>
+                <li><a href="investisseur_vip.html">Investisseur_VIP</a></li>
+                <li><a href="investissement_rentabilite.html">Investissement</a></li>
+              </ul>
+            </li>
+            <a href="../index.html#hist" class="nav2">À propos</a>
+            <a class="cta" href="#">Réserver</a>
+          </div>
+          <div class="lien-logo">
+             <a href="login.html"><img src="../img/user.png" class="cta2" alt="login" title="se connecter" /></a>
+          </div>
+        </nav>
+      </div>
+    </div>
 
-      }, 1500);
 
-  });
+    <!--- FORMULAIRE -->
+    <div class="login-container">
 
-</script>
+      <div class="logo">
+        <h1>BAWON+</h1>
+        <p>L'excellence haïtienne</p>
+      </div>
 
-</body>
+      <form id="loginForm">
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Mot de passe</label>
+          <input type="password" id="password" required>
+        </div>
+
+        <div class="remember">
+          <input type="checkbox" id="remember">
+          <label for="remember">
+            Rester connecté
+          </label>
+        </div>
+
+        <button type="submit" class="login-btn">
+          Se connecter
+        </button>
+
+        <div class="status" id="status">
+          Connexion réussie
+        </div>
+
+      </form>
+
+      <div class="bottom-text">
+        Pas encore de compte ?
+        <a href="register.html">Créer un compte</a>
+      </div>
+
+    </div>
+
+    <script>
+
+      // Vérifie si déjà connecté
+      if(localStorage.getItem("bawonUser")){
+
+          window.location.href = "index.html";
+
+      }
+
+      const form = document.getElementById("loginForm");
+
+      form.addEventListener("submit", function(e){
+
+          e.preventDefault();
+
+          const email = document.getElementById("email").value;
+
+          const password = document.getElementById("password").value;
+
+          const remember = document.getElementById("remember").checked;
+
+          // Exemple simple
+          const userData = {
+
+              email: email,
+              logged: true
+
+          };
+
+          // Sauvegarde session
+          if(remember){
+
+              localStorage.setItem(
+                "bawonUser",
+                JSON.stringify(userData)
+              );
+
+          }
+
+          document.getElementById("status").style.display = "block";
+
+          setTimeout(() => {
+
+              window.location.href = "../index.html";
+
+          }, 1500);
+
+      });
+
+    </script>
+    <script src="../script/script.js"></script>
+    <script type="module" src="../script/firebase.js"></script>
+  </body>
 </html>

@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cookies - BAWON+</title>
-  <link rel="stylesheet" href="../style/style.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BAWON +</title>
+    <link rel="stylesheet" href="../style/style.css">
+  </head>
 
-<body>
+  <body>
+    <!---
 
-<div class="topbar">
-  <div class="topbar-inner">
-    <a href="../index.html" class="nav2">Accueil</a>
-  </div>
-</div>
+      LA PARTIE NAV
 
-<main style="padding:120px 20px; max-width:900px; margin:auto; color:white;">
-  <h1 style="color:#d9b790;">Politique de cookies</h1>
+      -->
+      <div class="topbar" role="banner">
+        <div class="topbar-inner">
+          <div class="logo"> <!-- pour les logos des réseaux sociaux -->
+            <div>
+              <img src="../img/ytb.png" />
+            </div>
+            <div>
+              <img src="../img/x.png" />
+            </div>
+            <div>
+              <img src="../img/facebook.png" />
+            </div>
+          </div>
+          <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
+            <div class="les-liens">
+              <a href="../index.html#section-title" class="nav2">Services</a>
+              <a href="contact.html" class="nav2">Contact</a>
+              <li class="dropdown">
+                <button class="nav2 dropdown-toggle">Investissement</button>
+                <ul class="der2" hidden>
+                  <li><a href="fournisseur.html">Partenariat</a></li>
+                  <li><a href="investisseur_vip.html">Investisseur_VIP</a></li>
+                  <li><a href="investissement_rentabilite.html">Investissement</a></li>
+                </ul>
+              </li>
+              <a href="../index.html#hist" class="nav2">À propos</a>
+              <a class="cta" href="#">Réserver</a>
+            </div>
+            <div class="lien-logo">
+               <a href="login.html"><img src="../img/user.png" class="cta2" alt="login" title="se connecter" /></a>
+            </div>
+          </nav>
+        </div>
+      </div>
 
-  <p>
-    Le site BAWON+ utilise des cookies afin d’améliorer l’expérience utilisateur.
-  </p>
+    <main style="padding:120px 20px; max-width:900px; margin:auto; color:white;">
+      <h1 style="color:#d9b790;">Politique de cookies</h1>
 
-  <h2>Qu’est-ce qu’un cookie ?</h2>
-  <p>
-    Un cookie est un petit fichier stocké sur votre appareil.
-  </p>
+      <p>
+        Le site BAWON+ utilise des cookies afin d’améliorer l’expérience utilisateur.
+      </p>
 
-  <h2>Utilisation</h2>
-  <p>
-    Nous utilisons les cookies pour analyser le trafic et améliorer le site.
-  </p>
+      <h2>Qu’est-ce qu’un cookie ?</h2>
+      <p>
+        Un cookie est un petit fichier stocké sur votre appareil.
+      </p>
 
-  <h2>Gestion</h2>
-  <p>
-    Vous pouvez désactiver les cookies dans votre navigateur.
-  </p>
-</main>
+      <h2>Utilisation</h2>
+      <p>
+        Nous utilisons les cookies pour analyser le trafic et améliorer le site.
+      </p>
 
-</body>
+      <h2>Gestion</h2>
+      <p>
+        Vous pouvez désactiver les cookies dans votre navigateur.
+      </p>
+    </main>
+    <script src="../script/script.js"></script>
+    <script type="module" src="../script/firebase.js"></script>
+  </body>
 </html>

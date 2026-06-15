@@ -1,415 +1,453 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact | BAWON+</title>
+    <title>BAWON +</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
 
-<style>
+    <style>
 
-body{
-    margin:0;
-    font-family:Montserrat,sans-serif;
-    background:#050505;
-    color:white;
-}
+    body{
+        margin:0;
+        font-family:Montserrat,sans-serif;
+        background:#050505;
+        color:white;
+    }
 
-/* HERO */
+    /* HERO */
 
-.hero{
+    .hero{
 
-    min-height:70vh;
+        min-height:70vh;
 
-    display:flex;
-    align-items:center;
+        display:flex;
+        align-items:center;
 
-    background:
-    linear-gradient(
-        rgba(0,0,0,.65),
-        rgba(0,0,0,.88)
-    ),
-    url("img/contact.jpg");
+        background:
+        linear-gradient(
+            rgba(0,0,0,.65),
+            rgba(0,0,0,.88)
+        ),
+        url("img/contact.jpg");
 
-    background-size:cover;
-    background-position:center;
-}
+        background-size:cover;
+        background-position:center;
+    }
 
-.hero-content{
+    .hero-content{
 
-    max-width:800px;
+        max-width:800px;
 
-    padding:80px;
-}
-
-.hero h1{
-
-    font-size:72px;
-
-    margin:0;
-
-    font-family:"Playfair Display", serif;
-}
-
-.hero span{
-
-    color:#d9b36b;
-}
-
-.hero p{
-
-    color:#ddd;
-
-    font-size:18px;
-
-    line-height:1.8;
-
-    margin-top:25px;
-}
-
-/* SECTION */
-
-.contact-section{
-
-    padding:80px;
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:50px;
-}
-
-/* LEFT */
-
-.contact-info{
-
-    background:#101010;
-
-    border-radius:14px;
-
-    padding:40px;
-
-    border:1px solid rgba(217,179,107,.15);
-}
-
-.contact-info h2{
-
-    color:#d9b36b;
-
-    margin-top:0;
-}
-
-.info-item{
-
-    margin-bottom:25px;
-}
-
-.info-item strong{
-
-    display:block;
-
-    color:#d9b36b;
-
-    margin-bottom:8px;
-}
-
-.info-item p{
-
-    margin:0;
-
-    color:#ddd;
-
-    line-height:1.7;
-}
-
-/* FORM */
-
-.contact-form{
-
-    background:#101010;
-
-    border-radius:14px;
-
-    padding:40px;
-
-    border:1px solid rgba(217,179,107,.15);
-}
-
-.contact-form h2{
-
-    margin-top:0;
-
-    color:#d9b36b;
-}
-
-.group{
-
-    margin-bottom:18px;
-}
-
-.group label{
-
-    display:block;
-
-    margin-bottom:8px;
-
-    color:#d9b36b;
-
-    font-size:14px;
-}
-
-.group input,
-.group textarea{
-
-    width:100%;
-
-    padding:14px;
-
-    border:none;
-
-    border-radius:8px;
-
-    background:#181818;
-
-    color:white;
-
-    outline:none;
-
-    font-size:15px;
-}
-
-.group textarea{
-
-    min-height:140px;
-
-    resize:vertical;
-}
-
-button{
-
-    width:100%;
-
-    padding:15px;
-
-    border:none;
-
-    border-radius:8px;
-
-    background:#d9b36b;
-
-    color:black;
-
-    font-size:16px;
-
-    font-weight:700;
-
-    cursor:pointer;
-
-    transition:.3s;
-}
-
-button:hover{
-
-    background:white;
-}
-
-/* FOOTER */
-
-.footer{
-
-    padding:40px;
-
-    text-align:center;
-
-    color:#aaa;
-
-    border-top:1px solid rgba(255,255,255,.06);
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-    .contact-section{
-
-        grid-template-columns:1fr;
+        padding:80px;
     }
 
     .hero h1{
 
-        font-size:48px;
+        font-size:72px;
+
+        margin:0;
+
+        font-family:"Playfair Display", serif;
     }
 
-    .hero-content,
+    .hero span{
+
+        color:#d9b36b;
+    }
+
+    .hero p{
+
+        color:#ddd;
+
+        font-size:18px;
+
+        line-height:1.8;
+
+        margin-top:25px;
+    }
+
+    /* SECTION */
+
     .contact-section{
 
-        padding:30px;
+        padding:80px;
+
+        display:grid;
+
+        grid-template-columns:1fr 1fr;
+
+        gap:50px;
     }
-}
 
-</style>
-</head>
-<body>
+    /* LEFT */
 
-<!-- HERO -->
+    .contact-info{
 
-<section class="hero">
+        background:#101010;
 
-    <div class="hero-content">
+        border-radius:14px;
 
-        <h1>
-            Contactez <span>BAWON+</span>
-        </h1>
+        padding:40px;
 
-        <p>
-            Parlons de vos projets, de vos investissements
-            ou de vos opportunités de partenariat.
-            Notre équipe vous accompagne avec professionnalisme
-            et vision stratégique.
-        </p>
+        border:1px solid rgba(217,179,107,.15);
+    }
 
+    .contact-info h2{
+
+        color:#d9b36b;
+
+        margin-top:0;
+    }
+
+    .info-item{
+
+        margin-bottom:25px;
+    }
+
+    .info-item strong{
+
+        display:block;
+
+        color:#d9b36b;
+
+        margin-bottom:8px;
+    }
+
+    .info-item p{
+
+        margin:0;
+
+        color:#ddd;
+
+        line-height:1.7;
+    }
+
+    /* FORM */
+
+    .contact-form{
+
+        background:#101010;
+
+        border-radius:14px;
+
+        padding:40px;
+
+        border:1px solid rgba(217,179,107,.15);
+    }
+
+    .contact-form h2{
+
+        margin-top:0;
+
+        color:#d9b36b;
+    }
+
+    .group{
+
+        margin-bottom:18px;
+    }
+
+    .group label{
+
+        display:block;
+
+        margin-bottom:8px;
+
+        color:#d9b36b;
+
+        font-size:14px;
+    }
+
+    .group input,
+    .group textarea{
+
+        width:100%;
+
+        padding:14px;
+
+        border:none;
+
+        border-radius:8px;
+
+        background:#181818;
+
+        color:white;
+
+        outline:none;
+
+        font-size:15px;
+    }
+
+    .group textarea{
+
+        min-height:140px;
+
+        resize:vertical;
+    }
+
+    button{
+
+        width:100%;
+
+        padding:15px;
+
+        border:none;
+
+        border-radius:8px;
+
+        background:#d9b36b;
+
+        color:black;
+
+        font-size:16px;
+
+        font-weight:700;
+
+        cursor:pointer;
+
+        transition:.3s;
+    }
+
+    button:hover{
+
+        background:white;
+    }
+
+    /* FOOTER */
+
+    .footer{
+
+        padding:40px;
+
+        text-align:center;
+
+        color:#aaa;
+
+        border-top:1px solid rgba(255,255,255,.06);
+    }
+
+    /* MOBILE */
+
+    @media(max-width:900px){
+
+        .contact-section{
+
+            grid-template-columns:1fr;
+        }
+
+        .hero h1{
+
+            font-size:48px;
+        }
+
+        .hero-content,
+        .contact-section{
+
+            padding:30px;
+        }
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="logo"> <!-- pour les logos des réseaux sociaux -->
+          <div>
+            <img src="../img/ytb.png" />
+          </div>
+          <div>
+            <img src="../img/x.png" />
+          </div>
+          <div>
+            <img src="../img/facebook.png" />
+          </div>
+        </div>
+        <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
+          <div class="les-liens">
+            <a href="../index.html#section-title" class="nav2">Services</a>
+            <a href="contact.html" class="nav2">Contact</a>
+            <li class="dropdown">
+              <button class="nav2 dropdown-toggle">Investissement</button>
+              <ul class="der2" hidden>
+                <li><a href="fournisseur.html">Partenariat</a></li>
+                <li><a href="investisseur_vip.html">Investisseur_VIP</a></li>
+                <li><a href="investissement_rentabilite.html">Investissement</a></li>
+              </ul>
+            </li>
+            <a href="../index.html#hist" class="nav2">À propos</a>
+            <a class="cta" href="#">Réserver</a>
+          </div>
+          <div class="lien-logo">
+             <a href="login.html"><img src="../img/user.png" class="cta2" alt="login" title="se connecter" /></a>
+          </div>
+        </nav>
+      </div>
     </div>
 
-</section>
 
-<!-- CONTACT -->
+    <!-- HERO -->
 
-<section class="contact-section">
+    <section class="hero">
 
-    <!-- INFOS -->
+        <div class="hero-content">
 
-    <div class="contact-info">
-
-        <h2>Nos coordonnées</h2>
-
-        <div class="info-item">
-
-            <strong>Email</strong>
+            <h1>
+                Contactez <span>BAWON+</span>
+            </h1>
 
             <p>
-                info@bawonplus.com
+                Parlons de vos projets, de vos investissements
+                ou de vos opportunités de partenariat.
+                Notre équipe vous accompagne avec professionnalisme
+                et vision stratégique.
             </p>
 
         </div>
 
-        <div class="info-item">
+    </section>
 
-            <strong>Téléphone</strong>
+    <!-- CONTACT -->
 
-            <p>
-                +509 3000 0000
-            </p>
+    <section class="contact-section">
 
-        </div>
+        <!-- INFOS -->
 
-        <div class="info-item">
+        <div class="contact-info">
 
-            <strong>Adresse</strong>
+            <h2>Nos coordonnées</h2>
 
-            <p>
-                Rue 123, Pétion-Ville<br>
-                Port-au-Prince, Haïti
-            </p>
+            <div class="info-item">
 
-        </div>
+                <strong>Email</strong>
 
-        <div class="info-item">
-
-            <strong>Horaires</strong>
-
-            <p>
-                Lundi à Vendredi<br>
-                8h00 – 17h00
-            </p>
-
-        </div>
-
-        <div class="info-item">
-
-            <strong>Partenariats</strong>
-
-            <p>
-                Investisseurs VIP,
-                fournisseurs,
-                collaborations stratégiques
-                et projets à fort impact.
-            </p>
-
-        </div>
-
-    </div>
-
-    <!-- FORM -->
-
-    <div class="contact-form">
-
-        <h2>Envoyer un message</h2>
-
-        <form>
-
-            <div class="group">
-
-                <label>Nom complet</label>
-
-                <input
-                    type="text"
-                    required
-                >
+                <p>
+                    info@bawonplus.com
+                </p>
 
             </div>
 
-            <div class="group">
+            <div class="info-item">
 
-                <label>Email</label>
+                <strong>Téléphone</strong>
 
-                <input
-                    type="email"
-                    required
-                >
-
-            </div>
-
-            <div class="group">
-
-                <label>Sujet</label>
-
-                <input
-                    type="text"
-                    required
-                >
+                <p>
+                    +509 3000 0000
+                </p>
 
             </div>
 
-            <div class="group">
+            <div class="info-item">
 
-                <label>Message</label>
+                <strong>Adresse</strong>
 
-                <textarea required></textarea>
+                <p>
+                    Rue 123, Pétion-Ville<br>
+                    Port-au-Prince, Haïti
+                </p>
 
             </div>
 
-            <button type="submit">
+            <div class="info-item">
 
-                Envoyer le message
+                <strong>Horaires</strong>
 
-            </button>
+                <p>
+                    Lundi à Vendredi<br>
+                    8h00 – 17h00
+                </p>
 
-        </form>
+            </div>
 
-    </div>
+            <div class="info-item">
 
-</section>
+                <strong>Partenariats</strong>
 
-<!-- FOOTER -->
+                <p>
+                    Investisseurs VIP,
+                    fournisseurs,
+                    collaborations stratégiques
+                    et projets à fort impact.
+                </p>
 
-<footer class="footer">
+            </div>
 
-    © 2024 BAWON+ — Tous droits réservés
+        </div>
 
-</footer>
+        <!-- FORM -->
 
-</body>
+        <div class="contact-form">
+
+            <h2>Envoyer un message</h2>
+
+            <form>
+
+                <div class="group">
+
+                    <label>Nom complet</label>
+
+                    <input
+                        type="text"
+                        required
+                    >
+
+                </div>
+
+                <div class="group">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        required
+                    >
+
+                </div>
+
+                <div class="group">
+
+                    <label>Sujet</label>
+
+                    <input
+                        type="text"
+                        required
+                    >
+
+                </div>
+
+                <div class="group">
+
+                    <label>Message</label>
+
+                    <textarea required></textarea>
+
+                </div>
+
+                <button type="submit">
+
+                    Envoyer le message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        © 2024 BAWON+ — Tous droits réservés
+
+    </footer>
+    <script src="../script/script.js"></script>
+    <script type="module" src="../script/firebase.js"></script>
+  </body>
 </html>

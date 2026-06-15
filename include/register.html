@@ -1,284 +1,322 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Créer un compte | BAWON+</title>
+    <title>BAWON +</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
 
-<style>
+    <style>
 
-body{
-    margin:0;
-    min-height:100vh;
+    body{
+        margin:0;
+        min-height:100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
 
-    font-family:Montserrat,sans-serif;
+        font-family:Montserrat,sans-serif;
 
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.75),
-        rgba(0,0,0,0.75)
-    ),
-    url("img/img_back.png");
+        background:
+        linear-gradient(
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.75)
+        ),
+        url("img/img_back.png");
 
-    background-size:cover;
-    background-position:center;
-}
+        background-size:cover;
+        background-position:center;
+    }
 
-.register-box{
+    .register-box{
 
-    width:430px;
+        width:430px;
 
-    padding:45px;
+        padding:45px;
 
-    border-radius:20px;
+        border-radius:20px;
 
-    background:rgba(0,0,0,0.7);
+        background:rgba(0,0,0,0.7);
 
-    border:1px solid rgba(255,255,255,0.08);
+        border:1px solid rgba(255,255,255,0.08);
 
-    backdrop-filter:blur(14px);
+        backdrop-filter:blur(14px);
 
-    box-shadow:0 0 35px rgba(0,0,0,0.4);
+        box-shadow:0 0 35px rgba(0,0,0,0.4);
 
-    color:white;
-}
+        color:white;
+    }
 
-.logo{
+    .logo{
 
-    text-align:center;
-    margin-bottom:25px;
-}
+        text-align:center;
+        margin-bottom:25px;
+    }
 
-.logo h1{
+    .logo h1{
 
-    margin:0;
+        margin:0;
 
-    font-size:58px;
+        font-size:58px;
 
-    font-weight:200;
+        font-weight:200;
 
-    color:rgb(255,177,31);
-}
+        color:rgb(255,177,31);
+    }
 
-.logo p{
+    .logo p{
 
-    color:#d9b790;
+        color:#d9b790;
 
-    font-style:italic;
+        font-style:italic;
 
-    font-family:"Playfair Display",serif;
-}
+        font-family:"Playfair Display",serif;
+    }
 
-.group{
+    .group{
 
-    margin-bottom:18px;
-}
+        margin-bottom:18px;
+    }
 
-.group label{
+    .group label{
 
-    display:block;
+        display:block;
 
-    margin-bottom:8px;
+        margin-bottom:8px;
 
-    color:#d9b790;
+        color:#d9b790;
 
-    font-size:14px;
-}
+        font-size:14px;
+    }
 
-.group input{
+    .group input{
 
-    width:100%;
+        width:100%;
 
-    padding:14px;
+        padding:14px;
 
-    border:none;
+        border:none;
 
-    border-radius:8px;
+        border-radius:8px;
 
-    background:rgba(255,255,255,0.08);
+        background:rgba(255,255,255,0.08);
 
-    color:white;
+        color:white;
 
-    font-size:15px;
+        font-size:15px;
 
-    outline:none;
-}
+        outline:none;
+    }
 
-.group input:focus{
+    .group input:focus{
 
-    border:1px solid #d9b790;
-}
+        border:1px solid #d9b790;
+    }
 
-button{
+    button{
 
-    width:100%;
+        width:100%;
 
-    padding:15px;
+        padding:15px;
 
-    border:none;
+        border:none;
 
-    border-radius:10px;
+        border-radius:10px;
 
-    margin-top:10px;
+        margin-top:10px;
 
-    background:linear-gradient(
-        90deg,
-        rgb(255,177,31),
-        #d9b790
-    );
+        background:linear-gradient(
+            90deg,
+            rgb(255,177,31),
+            #d9b790
+        );
 
-    font-size:16px;
+        font-size:16px;
 
-    font-weight:700;
+        font-weight:700;
 
-    cursor:pointer;
-}
+        cursor:pointer;
+    }
 
-button:hover{
+    button:hover{
 
-    background:white;
-}
+        background:white;
+    }
 
-.bottom{
+    .bottom{
 
-    text-align:center;
+        text-align:center;
 
-    margin-top:20px;
+        margin-top:20px;
 
-    color:#aaa;
-}
+        color:#aaa;
+    }
 
-.bottom a{
+    .bottom a{
 
-    color:#d9b790;
+        color:#d9b790;
 
-    text-decoration:none;
+        text-decoration:none;
 
-    font-weight:600;
-}
+        font-weight:600;
+    }
 
-.status{
+    .status{
 
-    text-align:center;
+        text-align:center;
 
-    margin-top:15px;
+        margin-top:15px;
 
-    color:lightgreen;
+        color:lightgreen;
 
-    display:none;
-}
+        display:none;
+    }
 
-</style>
-</head>
-<body>
+    </style>
+  </head>
+  <body>
 
-<div class="register-box">
+     <div class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="logo"> <!-- pour les logos des réseaux sociaux -->
+          <div>
+            <img src="../img/ytb.png" />
+          </div>
+          <div>
+            <img src="../img/x.png" />
+          </div>
+          <div>
+            <img src="../img/facebook.png" />
+          </div>
+        </div>
+        <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
+          <div class="les-liens">
+            <a href="../index.html#section-title" class="nav2">Services</a>
+            <a href="contact.html" class="nav2">Contact</a>
+            <li class="dropdown">
+              <button class="nav2 dropdown-toggle">Investissement</button>
+              <ul class="der2" hidden>
+                <li><a href="fournisseur.html">Partenariat</a></li>
+                <li><a href="investisseur_vip.html">Investisseur_VIP</a></li>
+                <li><a href="investissement_rentabilite.html">Investissement</a></li>
+              </ul>
+            </li>
+            <a href="../index.html#hist" class="nav2">À propos</a>
+            <a class="cta" href="#">Réserver</a>
+          </div>
+          <div class="lien-logo">
+             <a href="login.html"><img src="../img/user.png" class="cta2" alt="login" title="se connecter" /></a>
+          </div>
+        </nav>
+      </div>
+    </div>
 
-    <div class="logo">
+      <!--- FORMULAIRE D'INSCRIPTION -->
+    <div class="register-box">
 
-        <h1>BAWON+</h1>
+        <div class="logo">
 
-        <p>Créer votre compte</p>
+            <h1>BAWON+</h1>
+
+            <p>Créer votre compte</p>
+
+        </div>
+
+        <form id="registerForm">
+
+            <div class="group">
+                <label>Nom complet</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="group">
+                <label>Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="group">
+                <label>Mot de passe</label>
+                <input type="password" id="password" required>
+            </div>
+
+            <button type="submit">
+                Créer mon compte
+            </button>
+
+            <div class="status" id="status">
+                Compte créé avec succès
+            </div>
+
+        </form>
+
+        <div class="bottom">
+
+            Déjà inscrit ?
+
+            <a href="login.html">
+                Se connecter
+            </a>
+
+        </div>
 
     </div>
 
-    <form id="registerForm">
+    <script>
 
-        <div class="group">
-            <label>Nom complet</label>
-            <input type="text" id="name" required>
-        </div>
+    const form = document.getElementById("registerForm");
 
-        <div class="group">
-            <label>Email</label>
-            <input type="email" id="email" required>
-        </div>
+    form.addEventListener("submit", function(e){
 
-        <div class="group">
-            <label>Mot de passe</label>
-            <input type="password" id="password" required>
-        </div>
+        e.preventDefault();
 
-        <button type="submit">
-            Créer mon compte
-        </button>
+        const name =
+            document.getElementById("name").value;
 
-        <div class="status" id="status">
-            Compte créé avec succès
-        </div>
+        const email =
+            document.getElementById("email").value;
 
-    </form>
+        const password =
+            document.getElementById("password").value;
 
-    <div class="bottom">
+        const user = {
 
-        Déjà inscrit ?
+            name:name,
+            email:email,
+            password:password,
+            logged:true
 
-        <a href="login.html">
-            Se connecter
-        </a>
+        };
 
-    </div>
+        // Sauvegarde du compte
+        localStorage.setItem(
+            "bawonAccount",
+            JSON.stringify(user)
+        );
 
-</div>
+        // Connexion automatique
+        localStorage.setItem(
+            "bawonUser",
+            JSON.stringify(user)
+        );
 
-<script>
+        document.getElementById("status")
+            .style.display = "block";
 
-const form = document.getElementById("registerForm");
+        setTimeout(function(){
 
-form.addEventListener("submit", function(e){
+            window.location.href =
+                "../index.html";
 
-    e.preventDefault();
+        },1500);
 
-    const name =
-        document.getElementById("name").value;
+    });
 
-    const email =
-        document.getElementById("email").value;
-
-    const password =
-        document.getElementById("password").value;
-
-    const user = {
-
-        name:name,
-        email:email,
-        password:password,
-        logged:true
-
-    };
-
-    // Sauvegarde du compte
-    localStorage.setItem(
-        "bawonAccount",
-        JSON.stringify(user)
-    );
-
-    // Connexion automatique
-    localStorage.setItem(
-        "bawonUser",
-        JSON.stringify(user)
-    );
-
-    document.getElementById("status")
-        .style.display = "block";
-
-    setTimeout(function(){
-
-        window.location.href =
-            "../index.html";
-
-    },1500);
-
-});
-
-</script>
-
-</body>
+    </script>
+    <script src="../script/script.js"></script>
+    <script type="module" src="../script/firebase.js"></script>
+  </body>
 </html>

@@ -1,111 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Retours & Remboursements - BAWON+</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BAWON +</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link href="../style/style.css" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+  </head>
 
-<body>
+  <body>
 
-<!-- TOPBAR (simplifié, identique à ton site si tu veux) -->
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="logo">
-      <div><img src="../img/ytb.png" /></div>
-      <div><img src="../img/x.png" /></div>
-      <div><img src="../img/facebook.png" /></div>
-    </div>
 
-    <nav class="nav">
-      <div class="les-liens">
-        <a href="../index.html" class="nav2">Accueil</a>
-        <a href="contact.html" class="nav2">Contact</a>
+    <div class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="logo"> <!-- pour les logos des réseaux sociaux -->
+          <div>
+            <img src="../img/ytb.png" />
+          </div>
+          <div>
+            <img src="../img/x.png" />
+          </div>
+          <div>
+            <img src="../img/facebook.png" />
+          </div>
+        </div>
+        <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
+          <div class="les-liens">
+            <a href="../index.html#section-title" class="nav2">Services</a>
+            <a href="contact.html" class="nav2">Contact</a>
+            <li class="dropdown">
+              <button class="nav2 dropdown-toggle">Investissement</button>
+              <ul class="der2" hidden>
+                <li><a href="fournisseur.html">Partenariat</a></li>
+                <li><a href="investisseur_vip.html">Investisseur_VIP</a></li>
+                <li><a href="investissement_rentabilite.html">Investissement</a></li>
+              </ul>
+            </li>
+            <a href="../index.html#hist" class="nav2">À propos</a>
+            <a class="cta" href="#">Réserver</a>
+          </div>
+          <div class="lien-logo">
+             <a href="login.html"><img src="../img/user.png" class="cta2" alt="login" title="se connecter" /></a>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</div>
-
-<main style="padding-top:120px;">
-
-  <!-- HERO SECTION -->
-  <section style="background:#000; color:white; text-align:center; padding:80px 20px;">
-    <h1 style="font-family:'Playfair Display', serif; font-size:48px; color:#d9b790;">
-      Retours & Remboursements
-    </h1>
-    <p style="max-width:700px; margin:20px auto; font-size:18px; opacity:0.85;">
-      Chez BAWON+, nous voulons garantir une expérience transparente et satisfaisante.
-      Voici nos conditions de retour et de remboursement.
-    </p>
-  </section>
-
-  <!-- CONTENT -->
-  <section style="background:white; color:#111; padding:60px 20px;">
-    <div style="max-width:900px; margin:auto;">
-
-      <h2 style="font-size:28px; margin-bottom:10px;">1. Conditions de retour</h2>
-      <p>
-        Les produits peuvent être retournés dans un délai de <strong>14 jours</strong> après réception,
-        à condition qu’ils soient non ouverts, non utilisés et dans leur emballage d’origine.
-      </p>
-
-      <h2 style="font-size:28px; margin-top:40px;">2. Produits non éligibles</h2>
-      <p>
-        Certains produits ne peuvent pas être retournés :
-        articles personnalisés, produits ouverts ou consommables déjà utilisés.
-      </p>
-
-      <h2 style="font-size:28px; margin-top:40px;">3. Procédure de retour</h2>
-      <p>
-        Pour effectuer un retour, contactez notre service client via la page
-        <a href="contact.html">Contact</a> en indiquant votre numéro de commande.
-      </p>
-
-      <h2 style="font-size:28px; margin-top:40px;">4. Remboursement</h2>
-      <p>
-        Une fois le produit reçu et inspecté, le remboursement sera effectué sous
-        <strong>7 à 14 jours ouvrés</strong> via le mode de paiement initial.
-      </p>
-
-      <h2 style="font-size:28px; margin-top:40px;">5. Produits endommagés</h2>
-      <p>
-        Si un produit arrive endommagé, merci de nous contacter immédiatement avec des photos à l’appui.
-        Une solution (remplacement ou remboursement) sera proposée.
-      </p>
-
     </div>
-  </section>
 
-  <!-- CTA -->
-  <section style="background:#d9b790; text-align:center; padding:60px 20px;">
-    <h2 style="font-size:32px;">Besoin d’aide ?</h2>
-    <p>Notre équipe est disponible pour vous accompagner.</p>
-    <a href="contact.html" style="
-      display:inline-block;
-      margin-top:20px;
-      padding:12px 24px;
-      background:#111;
-      color:white;
-      text-decoration:none;
-      border-radius:6px;
-      font-weight:bold;">
-      Nous contacter
-    </a>
-  </section>
 
-</main>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="inner">
-    <div class="footer-bottom">
-      © 2026 BAWON+. Tous droits réservés.
-    </div>
-  </div>
-</footer>
+    <main style="padding-top:120px;">
 
-</body>
+      <!-- HERO SECTION -->
+      <section style="background:#000; color:white; text-align:center; padding:80px 20px;">
+        <h1 style="font-family:'Playfair Display', serif; font-size:48px; color:#d9b790;">
+          Retours & Remboursements
+        </h1>
+        <p style="max-width:700px; margin:20px auto; font-size:18px; opacity:0.85;">
+          Chez BAWON+, nous voulons garantir une expérience transparente et satisfaisante.
+          Voici nos conditions de retour et de remboursement.
+        </p>
+      </section>
+
+      <!-- CONTENT -->
+      <section style="background:white; color:#111; padding:60px 20px;">
+        <div style="max-width:900px; margin:auto;">
+
+          <h2 style="font-size:28px; margin-bottom:10px;">1. Conditions de retour</h2>
+          <p>
+            Les produits peuvent être retournés dans un délai de <strong>14 jours</strong> après réception,
+            à condition qu’ils soient non ouverts, non utilisés et dans leur emballage d’origine.
+          </p>
+
+          <h2 style="font-size:28px; margin-top:40px;">2. Produits non éligibles</h2>
+          <p>
+            Certains produits ne peuvent pas être retournés :
+            articles personnalisés, produits ouverts ou consommables déjà utilisés.
+          </p>
+
+          <h2 style="font-size:28px; margin-top:40px;">3. Procédure de retour</h2>
+          <p>
+            Pour effectuer un retour, contactez notre service client via la page
+            <a href="contact.html">Contact</a> en indiquant votre numéro de commande.
+          </p>
+
+          <h2 style="font-size:28px; margin-top:40px;">4. Remboursement</h2>
+          <p>
+            Une fois le produit reçu et inspecté, le remboursement sera effectué sous
+            <strong>7 à 14 jours ouvrés</strong> via le mode de paiement initial.
+          </p>
+
+          <h2 style="font-size:28px; margin-top:40px;">5. Produits endommagés</h2>
+          <p>
+            Si un produit arrive endommagé, merci de nous contacter immédiatement avec des photos à l’appui.
+            Une solution (remplacement ou remboursement) sera proposée.
+          </p>
+
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section style="background:#d9b790; text-align:center; padding:60px 20px;">
+        <h2 style="font-size:32px;">Besoin d’aide ?</h2>
+        <p>Notre équipe est disponible pour vous accompagner.</p>
+        <a href="contact.html" style="
+          display:inline-block;
+          margin-top:20px;
+          padding:12px 24px;
+          background:#111;
+          color:white;
+          text-decoration:none;
+          border-radius:6px;
+          font-weight:bold;">
+          Nous contacter
+        </a>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="inner">
+        <div class="footer-bottom">
+          © 2026 BAWON+. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+    <script src="../script/script.js"></script>
+    <script type="module" src="../script/firebase.js"></script>
+  </body>
 </html>
