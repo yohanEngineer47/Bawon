@@ -1,238 +1,89 @@
-<!-- la page principal, de Bawon -->
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BAWON +</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link href="style/style.css" rel="stylesheet">
-</head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-<body>
-  <!---
+    <!-- update the version number as needed -->
+    <!--<script defer src="/__/firebase/12.14.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/12.14.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/12.14.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/12.14.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/12.14.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/12.14.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/12.14.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/12.14.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/12.14.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/12.14.0/firebase-performance-compat.js"></script>
 
-    Toute la partie nav
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
 
-  -->
-  <div class="topbar" role="banner">
-    <div class="topbar-inner">
-      <div class="logo"> <!-- pour les logos des réseaux sociaux -->
-        <div>
-          <img src="img/ytb.png" />
-        </div>
-        <div>
-          <img src="img/x.png" />
-        </div>
-        <div>
-          <img src="img/facebook.png" />
-        </div>
-      </div>
-      <nav class="nav" aria-label="Navigation principale">  <!-- partie principal du navigateur  -->
-        <div class="les-liens">
-          <a href="#section-title" class="nav2">Services</a>
-          <a href="include/contact.html" class="nav2">Contact</a>
-          <li class="dropdown">
-            <button class="nav2 dropdown-toggle">Investissement</button>
-            <ul class="der2" hidden>
-              <li><a href="include/fournisseur.html">Partenariat</a></li>
-              <li><a href="include/investisseur_vip.html">Investisseur_VIP</a></li>
-              <li><a href="include/investissement_rentabilite.html">Investissement</a></li>
-            </ul>
-          </li>
-          <a href="#hist" class="nav2">À propos</a>
-          <a class="cta" href="#">Réserver</a>
-        </div>
-        <div class="lien-logo">
-           <a href="include/login.html"><img src="img/user.png" class="cta2" alt="login" title="se connecter" /></a>
-        </div>
-      </nav>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
-  </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-  <main>
-    <!--
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-      Partie vitrine de la page Bawon+
-
-    -->
-    <section class="hero" aria-label="Hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <div class="lang-switch"> <!-- Boutton pour changer de langue -->
-          <button class="lang-toggle"  aria-expanded="false" aria-controls="lang-menu">Français</button>
-          <ul id="lang-menu" class="lang-menu" hidden>
-            <li><button data-lang="Français">Français</button></li>
-            <li><button data-lang="English">English</button></li>
-            <li><button data-lang="Créol">créol</button></li>
-          </ul>
-        </div>
-        <div class="hero-left">
-          <div class="title">
-            <h1 class="brand-title">BAWON</h1>
-            <div class="vertical-sep" aria-hidden="true"></div>
-          </div>
-          <div class="img-stack" aria-hidden="true">
-            <img src="img/plus_symbol_white_edited.png" alt="symbole_plus" class="active">
-            <img src="img/medical_symbol_white_edited.png" alt="symbole_medical" >
-          </div>
-        </div>
-        <p class="tagline">L'excellence haïtienne, du passé vers le futur.</p>
-        <div class="hero-buttons">
-            <a class="btn btn-white" href="#">Découvrir l'univers</a>
-            <a class="btn btn-primary" href="#" style="padding-right: 70px; padding-left: 70px;">Investir</a>
-        </div>
-        <div>
-          <img src="img/down-arrow.png" style="height: 70px" />
-        </div>
-      </div>
-    </section>
-    <!--
-
-      Biographie rapide de l'entreprise
-
-    -->
-    <section class="about" aria-label="À propos">
-      <div style="flex-basis:360px; display:flex;align-items:center;justify-content:center">
-        <div style="width:100%;text-align:center;color:#616060">
-          <div><img class="img_bout" src="img/bout1.png" /></div>
-        </div>
-      </div>
-      <div class="about-card" id="hist">
-        <h3 style="font-family:peaches-and-cream-regular-w00,script;">À propos</h3>
-        <p class="spe-text" style="font-family: Arial, Helvetica, sans-serif; padding-right: 170px; padding-left: 170px;">
-         BAWON+ est né d’une ambition : révéler l’excellence haïtienne au monde. Inspiré par l’héritage culturel et spirituel d’Haïti, nous transformons traditions et savoir-faire en expériences modernes et luxueuses.
-         <br>
-
-         </br> 
-         Nos rhums, nos chocolats et nos créations lifestyle ne sont pas de simples produits, mais des symboles d’identité, d’innovation et de rêve.
-          <br>
-
-          </br>
-         BAWON+ construit un pont entre passé et futur, entre authenticité et innovation, pour éveiller vos sens et explorer de nouveaux horizons.
-        </p>
-        <p style="text-align: center; color: rgb(61, 24, 24); font-style: italic; font-family:'Playfair Display', serif; margin-top: 50px;">
-          <a href="#" class="txt">Plus ></a>
-        </p>
-      </div>
-      <div style="flex-basis:360px; display:flex;align-items:center;justify-content:center">
-        <div style="width:100%;text-align:center;color:#bdbdbd">
-          <div><img class="img_bout" src="img/bout2.png" /></div>
-        </div>
-      </div>
-    </section>
-    <section class="bandecolor">
-    </section>
-    <section class="blockvideo"> <!--- pour la vidéo -->
-      <!---
-
-        Bande colorée floue à gauche
-
-      -->
-     <div class="left-band"></div>
-      <div class="content">
-        <p>Éveillez vos sens</p> 
-        <p>Connectez vous</p>
-        <p> Explorez les mystères</p>
-        <button class="abonnez-vous">Abonnez-vous</button>
-      </div>
-
-      <div class="video-box">
-        <video controls autoplay muted loop playsinline width="600">
-          <source src="../Bawon/video/pub.mp4" type="video/mp4">
-        </video>
-      </div>
-      
-    </section>
-    <!---
-
-      LES SERVICES PROPOSÉS
-
-    -->
-    <section class="poles" aria-label="Nos pôles">
-      <h2 class="section-title" id="section-title">NOS SERVICES</h2>
-      <div class="grid" role="list">
-        <div class="pole" role="listitem" id="cacao"><div class="name"><a href="include/cacao.html" style="text-decoration: none; color:white;">Cacao</a></div></div>
-        <div class="pole" role="listitem" id="spiritualité"><div class="name"><a href="include/spiritualite.html" style="text-decoration: none; color:white;">Spiritualité</a></div></div>
-        <div class="pole" role="listitem" id="music"><div class="name"><a href="include/music.html" style="text-decoration: none; color:white;">Musique</a></div></div>
-      </div>
-    </section>
-
-    <!-- == Nouvelle section CONTACT (intégrée et stylisée) == -->
-    <section class="contact" aria-label="Nous contacter">
-      <div class="contact-wrap">
-        <div class="brand-box" id="brand-box" style="padding-top: 35px;">BAWON+</div>
-        <h2 style="font-size: 30px; letter-spacing: -1px; font-weight: 650;">NOUS CONTACTER</h2>
-
-        <div class="contact-meta">
-          <div style="font-weight:600; margin-bottom:8px; color: black !important; font-size: 25px;">ADRESSE</div>
-          15, rue du Château 75001 Paris, France<br>
-          Tel: 01 23 45 67 89 • Fax: 01 23 45 67 99
-        </div>
-          <!---
-
-          Partie Contact
-
-          -->
-        <div class="contact-content">
-          <div class="left-col">
-            <div style="font-weight:700; font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black !important;" class="section-title;">HORAIRES D'OUVERTURE</div>
-            <div style="display: flex; color: black !important; line-height:1.6; margin-bottom: 70px; justify-content: centert; display :inline;">
-              Lundi - vendredi : 09:00 - 22:00<br>
-              Samedi : 09:30 - 22:00<br>
-              Dimanche : 09:30 - 21:00
-            </div>
-          </div>
-
-          <div class="right-col">
-            <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
-             <div style="display: flex ; flex-direction: column ; gap: 8px;">
-              <input class="wide" type="text" id="name" name="name" placeholder="Nom" required>
-              <input class="wide" type="text" id="name" name="name" placeholder="Prénom" required>
-              <input type="email" id="email" name="email" placeholder="E-mail" required>
-             </div>
-             <div>
-              <textarea name="message" id="message" placeholder="Rédigez votre message ici..." required></textarea>
-             </div>
-              <div class="submit-wrap">
-                <button class="btn-send" type="submit">Envoyer</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="map-wrap">
-          <div style="width: auto; height: 322px; margin:-10px; margin-top: 0px; margin-bottom: 200px;">
-            <div class="map" id="map">Carte (chargement...)</div>
-            <div class="map-wrap" style="margin-left: uto; margin-top: 10px; margin-right: 10px;"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---
-
-    Partie bas de page pour
-    les politique de confidentialité
-    ainsi que pour tout autre forme de
-    respect et protection des données
-
-    -->
-    <footer class="site-footer" role="contentinfo">
-      <div class="inner">
-        <div class="footer-glo" style="display: flex; justify-content: space-around; gap: 80px;">
-          <div class="footer-top" id="spe-footer-top"> <a href="include/mentions-legales.html" style="text-decoration: none; color: #858585;">MENTIONS LÉGALES</a></div>
-          <div class="footer-top" id="spe-footer-top-2"><a href="include/cookies.html" style="text-decoration: none; color: #858585;">COOKIES</a></div>
-          <div class="footer-top" id="spe-footer-top-3"><a href="include/confidentialite.html" style="text-decoration: none; color: #858585;">CONFIDENTIALITÉ</a></div>
-          <div class="footer-top"><a href="include/conditions-utilisation.html" style="text-decoration: none; color: #858585">CONDITIONS</a></div>
-        </div>
-        <div class="footer-bottom">© 2026 par BAWON +. crééer localement</div>
-      </div>
-    </footer>
-  </main>
-
-  <button class="chat-btn" aria-label="Chat">💬</button>
-  <script src="script/script.js"></script>
-  <script type="module" src="script/firebase.js"></script>
-</body>
-
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
